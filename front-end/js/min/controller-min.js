@@ -1,0 +1,1 @@
+var eComApp=angular.module("ecommerceApp",[]),eController=eComApp.controller("ecommerceController",function(e,o){e.test="yo"});
