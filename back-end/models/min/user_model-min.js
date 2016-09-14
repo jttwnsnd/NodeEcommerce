@@ -1,1 +1,1 @@
-var mongoose=require("mongoose"),Schema=mongoose.Schema,userSchema=new Schema({username:{type:String,required:!0},password:{type:String,required:!0},email:{type:String,required:!0}},{timestamps:!0});module.exports=mongoose.model("User",userSchema);
+var mongoose=require("mongoose"),Schema=mongoose.Schema,userSchema=new Schema({username:{type:String,required:!0},password:{type:String,required:!0},email:{type:String,required:!0},token:String,tokenExpDate:Date},{timestamps:!0});module.exports=mongoose.model("User",userSchema);

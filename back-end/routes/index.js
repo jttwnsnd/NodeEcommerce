@@ -13,6 +13,7 @@ var User = require('../models/user_model.js');
 mongoose.connect(mongoUrl);
 
 var bcrypt = require('bcrypt-nodejs');
+var randToken = require('rand-token');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -24,7 +25,6 @@ router.post('/register', function(req, res, next) {
 	User.findOne({
 		username: req.body.username
 	}, function(error, document){
-		console.log(document);
 		//document is return from mongo query
 		//the ocument wil have a property for each field. need to check the password
 		if(document === req.body.username){
@@ -47,18 +47,28 @@ router.post('/register', function(req, res, next) {
 				var user_username = req.body.username;
 				var user_password = req.body.password;
 				var user_email = req.body.email;
-
+				var token = randToken(32);
+				var tokenExpDate = Date.now();
 				var userToAdd = new User({
 					username: user_username,
 					password: bcrypt.hashSync(user_password),
-					email: user_email
+					email: user_email,
+					token: token
+					//Add tokenExpDate
 				});
 
-				userToAdd.save();
-				res.json({
-					message: 'User Added',
-					username: user_username,
-					full_info: userToAdd
+				userToAdd.save(function(error, documentAdded){
+					if(error){
+						res.json({
+							message: 'errorAdding'
+						});
+					}else{
+						res.json({
+							message: 'User Added',
+							username: user_username,
+							token: token
+						});
+					}
 				});
 			}
 		}
@@ -78,18 +88,47 @@ router.post('/login', function(req, res, next){
 			});
 		}else{
 			var loginResult = bcrypt.compareSync(req.body.password, document.password);
+			var token = randToken(32);
+			var tokenExpDate = Date.now();
 			if(loginResult){
 				res.json({
 					success: 'userFound',
-					username: document.username
+					username: document.username,
+					token: token
 				});
 			}else{
 				res.json({
 					failure: 'badPass'
 				});
 			}
+			User.update({username:document.username}, {token: token, tokenExpDate: tokenExpDate});
 		}
 	});
+});
+
+router.get('getUserData', function(req, res, next){
+	var userToken = req.query.token; //the XXX in ?token=XXXXX
+	if(userToken === undefined){
+		//no token was supplied
+		res.json({
+			failure: 'noToken'
+		});
+	}else{
+		User.findOne({
+			token: userToken //this is the droid we're looking for
+		}, function(error, document){
+			if(document === null){
+				res.json({failure: 'badToken'}); //Angular will need to act on this to get new token
+			}else{
+				res.json({
+					username: document.username,
+					grind: document.grind,
+					frequency: document.frequency,
+					token: document.token
+				});
+			}
+		});
+	}
 });
 
 module.exports = router;

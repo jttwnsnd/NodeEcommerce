@@ -33,10 +33,12 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 				$scope.noMatch = false;
 			}
 			if(response.data.message === 'User Added'){
+				$cookies.put('token', response.data.token);
+				$cookies.put('username', $scope.username);
 				$rootScope.loggedOut = true;
 				$location.path('/options');
 			}
-		}, function errorCallbacl(response) {
+		}, function errorCallback(response) {
 			console.log(response);
 		});
 	};
@@ -58,18 +60,32 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 				$rootScope.username = response.data.username;
 				$rootScope.loggedOut = true;
 				console.log($rootScope.loggedOut);
+				$cookies.put('token', response.data.token);
+				$cookies.put('username', $scope.username);
 				$location.path('/options');
 			}
 			if(response.data.failure === 'noUser'){
 				console.log('Incorrect password');
 			}
-		}, function errorCallbacl(response) {
+		}, function errorCallback(response) {
 			console.log(response);
 		});
 	};
 	$scope.logout = function(){
 		$rootScope.loggedOut = true;
 	};
+	http.get(apiPath + '/getUserData?token='+ $cookies.get('token')).then(function successCallback(response){
+		console.log(response);
+		if(response.data.failure === 'badToken'){
+			$location.path = '/login'; //Token is bad or fake. Goodbye
+		}else if(response.data.failure === 'noToken'){
+			$location.path('/login'); //No token. Goodbye
+		}else{
+			//token is good. Response.data will have their stuff in it.
+		}
+	}, function errorCallback(response){
+		console.log(response);
+	});
 });
 
 eComApp.config(function($routeProvider){
