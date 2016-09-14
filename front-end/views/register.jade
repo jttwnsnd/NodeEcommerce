@@ -1,0 +1,39 @@
+.container
+  .row
+    .col-sm-12.text-center
+      h1 Registration
+      .placement(ng-hide="errorMessage")
+        .stand-in
+      .message(ng-show="errorMessage")
+        .error.center-block.bg-danger.text-danger(ng-show="userExists") Username Already in Use
+        .error.center-block.bg-danger.text-danger(ng-show="noMatch") Passwords Do Not Match
+        
+
+    .col-sm-12
+      form#registration-form(ng-submit="register()")
+        .form-group.col-sm-12
+            .col-sm-6.col-sm-offset-4
+              .input-group.col-sm-8
+                span.input-group-addon
+                  span.glyphicon.glyphicon-user
+                input.form-control(type="text", ng-model="username", placeholder="Enter Username", min-length="4", max-length="30")
+        .form-group.col-sm-12
+            .col-sm-6.col-sm-offset-4
+              .input-group.col-sm-8
+                span.input-group-addon
+                  span.glyphicon.glyphicon-lock
+                input.form-control(type="password", ng-model="password", placeholder="Enter Password", min-length="4", max-length="30")
+        .form-group.col-sm-12
+            .col-sm-6.col-sm-offset-4
+              .input-group.col-sm-8
+                span.input-group-addon
+                  span.glyphicon.glyphicon-lock
+                input.form-control(type="password", ng-model="password2", placeholder="Please Confirm Password", min-length="4", max-length="30")
+        .form-group.col-sm-12
+            .col-sm-6.col-sm-offset-4
+              .input-group.col-sm-8
+                span.input-group-addon
+                  span.glyphicon.glyphicon-envelope
+                input.form-control(type="email", ng-model="email", placeholder="Enter Email", min-length="4", max-length="30")
+        .button-holder.text-center
+          button.btn.btn-success(type="submit") Sign Up

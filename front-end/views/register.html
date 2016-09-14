@@ -1,0 +1,50 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h1>Registration</h1>
+      <div ng-hide="errorMessage" class="placement">
+        <div class="stand-in"></div>
+      </div>
+      <div ng-show="errorMessage" class="message">
+        <div ng-show="userExists" class="error center-block bg-danger text-danger">Username Already in Use</div>
+        <div ng-show="noMatch" class="error center-block bg-danger text-danger">Passwords Do Not Match</div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <form id="registration-form" ng-submit="register()">
+        <div class="form-group col-sm-12">
+          <div class="col-sm-6 col-sm-offset-4">
+            <div class="input-group col-sm-8"><span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+              <input type="text" ng-model="username" placeholder="Enter Username" min-length="4" max-length="30" class="form-control"/>
+            </div>
+          </div>
+        </div>
+        <div class="form-group col-sm-12">
+          <div class="col-sm-6 col-sm-offset-4">
+            <div class="input-group col-sm-8"><span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+              <input type="password" ng-model="password" placeholder="Enter Password" min-length="4" max-length="30" class="form-control"/>
+            </div>
+          </div>
+        </div>
+        <div class="form-group col-sm-12">
+          <div class="col-sm-6 col-sm-offset-4">
+            <div class="input-group col-sm-8"><span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+              <input type="password" ng-model="password2" placeholder="Please Confirm Password" min-length="4" max-length="30" class="form-control"/>
+            </div>
+          </div>
+        </div>
+        <div class="form-group col-sm-12">
+          <div class="col-sm-6 col-sm-offset-4">
+            <div class="input-group col-sm-8"><span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+              <input type="email" ng-model="email" placeholder="Enter Email" min-length="4" max-length="30" class="form-control"/>
+            </div>
+          </div>
+        </div>
+        <div class="button-holder text-center">
+          <button type="submit" class="btn btn-success">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

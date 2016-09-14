@@ -1,0 +1,51 @@
+@import 'components/mixins'
+@import 'configs/_variables'
+
+.land_img
+	height: 450px
+	width: auto
+	background:
+		image: url('images/coffee.jpg')
+		repeat: no-repeat
+		size: 100% auto
+		position: center -250px
+.transition_landing
+	position: relative
+	bottom: -20px
+	height: 100px
+	background:
+		image: linear-gradient(transparent 0%, $lighter_accent 80%)
+.visual-lining
+	padding: 245px 0 0 100px
+	.title
+		color: $main_accent
+		font-weight: bold
+		font-size: 44px
+	.subtitle
+		color: $main_accent
+		font-size: 18px
+		font-style: italic
+		margin-left: 5px
+.breaker
+	height: 80px
+	background-color: $lighter_accent
+	position: relative
+	.triangle
+		+triangle($lighter_accent, 50px)
+		top: 100%
+		left: 47.5%
+		z-index: 20
+.first_img
+	height: 440px
+	background:
+		image: linear-gradient(transparent 0%, black 80%), url('images/bags.jpg')
+		repeat: no-repeat
+	position: relative
+
+.one_transition
+	+triangle($black, 50px)
+	top: 100%
+	left: 47.5%
+
+
+	

@@ -1,14 +1,50 @@
 html(ng-app='ecommerceApp')
   head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
     title eCommerce Site
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
     link(type="text/css", rel="stylesheet", href="css/styles.css")
-    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js")
-    script(src="js/controller.js")
-  body(ng-controller="ecommerceController")
-    nav
-      .nav-container
-        .icon DC Roasters
-        .menu-options
-          ul.straighten-out
-            li Option 1
-            li Option 2
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js")
+    script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js")
+    script(src="js/angular-route.min.js")
+    script(src="js/angular-cookies.min.js")
+    script(type="text/javascript", src="js/mainController.js")
+    script(src="js/mainController.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css")
+  body(ng-controller="mainController")
+    nav.nav.navbar-default#top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar-collapse-1", aria-expanded="false")
+              span.sr-only Toggle Navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+          a.navbar-brand(href="#")
+            img(src="css/images/brand.png")
+        #navbar-collapse-1.collapse.navbaar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li(ng-show="loggedOut") 
+            a(href='#') Hello, {{username}}
+          li(ng-hide='loggedOut')
+            a(ng-href="#/register") Sign Up
+          li(ng-hide="loggedOut")
+            a(ng-href="#/login") Log In
+          li(ng-show="loggedOut")
+            a(ng-href="#/logout") Log Out
+    #views(ng-view)
+    footer.text-center
+      ul
+        li Home
+        li Selection
+        li Shipping
+        li Payment
+        li Confirmation
+      div
+        a Up to Top
+      p DC Roasters | All Rights Reserved
+
+        
