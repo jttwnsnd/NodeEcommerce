@@ -3,7 +3,7 @@ html(ng-app='ecommerceApp')
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    title eCommerce Site
+    title DC Roasters
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
     link(type="text/css", rel="stylesheet", href="css/styles.css")
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js")
@@ -15,7 +15,7 @@ html(ng-app='ecommerceApp')
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css")
   body(ng-controller="mainController")
-    nav.nav.navbar-default#top
+    nav.nav.navbar-default.navbar-fixed-top#top
       .container-fluid
         .navbar-header
           button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar-collapse-1", aria-expanded="false")
@@ -30,21 +30,25 @@ html(ng-app='ecommerceApp')
           li(ng-show="loggedOut") 
             a(href='#') Hello, {{username}}
           li(ng-hide='loggedOut')
-            a(ng-href="#/register") Sign Up
+            a(ng-href="#/register") SIGN UP
           li(ng-hide="loggedOut")
-            a(ng-href="#/login") Log In
+            a(ng-href="#/login") LOG IN
           li(ng-show="loggedOut")
-            a(ng-href="#/logout") Log Out
+            a(ng-href="#/logout") LOG OUT
     #views(ng-view)
     footer.text-center
       ul
-        li Home
-        li Selection
-        li Shipping
-        li Payment
-        li Confirmation
-      div
-        a Up to Top
+        li 
+          a(href="#/") HOME
+        li 
+          a(href="#/options") SELECTION
+        li 
+          a(href="#/shipping") SHIPPING
+        li 
+          a(href="#/payment") PAYMENT
+        li 
+          a(href="#/confirmation") CONFIRMATION
+      
       p DC Roasters | All Rights Reserved
 
         

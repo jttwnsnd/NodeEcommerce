@@ -16,7 +16,7 @@
   width: 50px; }
 
 .land_img {
-  height: 450px;
+  height: 440px;
   width: auto;
   background-image: url("images/coffee.jpg");
   background-repeat: no-repeat;
@@ -25,12 +25,12 @@
 
 .transition_landing {
   position: relative;
-  bottom: -20px;
+  bottom: -25px;
   height: 100px;
   background-image: linear-gradient(transparent 0%, #EDEBE6 80%); }
 
 .visual-lining {
-  padding: 245px 0 0 100px; }
+  padding: 230px 0 0 100px; }
   .visual-lining .title {
     color: #084d40;
     font-weight: bold;
@@ -41,10 +41,26 @@
     font-style: italic;
     margin-left: 5px; }
 
+.visual-lining-options {
+  color: #084d40;
+  padding: 150px 500px; }
+  .visual-lining-options .options-title {
+    color: #084d40;
+    font-size: 35px;
+    font-weight: bold; }
+  .visual-lining-options .options {
+    color: #084d40;
+    margin-left: 5px;
+    font-size: 18px;
+    font-style: italic; }
+
 .breaker {
   height: 80px;
   background-color: #EDEBE6;
   position: relative; }
+  .breaker .hiw {
+    color: #084d40;
+    font-size: 35px; }
   .breaker .triangle {
     border-top: 50px solid #EDEBE6;
     border-left: 50px solid transparent;
@@ -52,7 +68,7 @@
     border-bottom: 50px solid transparent;
     position: absolute;
     top: 100%;
-    left: 47.5%;
+    left: 46.5%;
     z-index: 20; }
 
 .first_img {
@@ -60,21 +76,96 @@
   background-image: linear-gradient(transparent 0%, black 80%), url("images/bags.jpg");
   background-repeat: no-repeat;
   position: relative; }
+  .first_img .triangle {
+    border-top: 50px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 46.5%;
+    z-index: 20; }
 
-.one_transition {
-  border-top: 50px solid black;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  position: absolute;
-  top: 100%;
-  left: 47.5%; }
+.second_img {
+  height: 440px;
+  background-color: #EDEBE6;
+  position: relative; }
+  .second_img .triangle {
+    border-top: 50px solid #EDEBE6;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 46.5%;
+    z-index: 20; }
+  .second_img .image_skewed img {
+    transform: rotateZ(30%);
+    height: 20px; }
+  .second_img .visual-lining-with-image {
+    color: #084d40;
+    position: relative;
+    padding: 150px 100px;
+    right: -40%; }
+    .second_img .visual-lining-with-image .options-title {
+      color: #084d40;
+      font-size: 35px;
+      font-weight: bold; }
+    .second_img .visual-lining-with-image .options {
+      color: #084d40;
+      margin-left: 5px;
+      font-size: 18px;
+      font-style: italic; }
+
+button {
+  cursor: default !important; }
+
+select {
+  cursor: default !important; }
+
+.container-fluid {
+  color: #084d40; }
+
+#option-individual {
+  background-color: #6A4A2C;
+  padding: 30px;
+  box-shadow: 0 0 10px 0 #333;
+  color: #fff; }
+  #option-individual img {
+    height: 300px;
+    width: auto;
+    border: 5px solid #684A2C; }
+
+#option-family {
+  background-color: #6A4A2C;
+  padding: 30px;
+  box-shadow: 0 0 10px 0 #333;
+  color: #fff; }
+  #option-family img {
+    height: 300px;
+    width: auto;
+    border: 5px solid #684A2C; }
+
+#option-custom {
+  background-color: #6A4A2C;
+  padding: 0px;
+  box-shadow: 0 0 10px 0 #333;
+  color: #fff; }
 
 body {
-  background-color: #333;
-  color: black;
+  background-color: #EDEBE6;
+  color: #084d40;
   margin: 0;
   padding: 0; }
+  body a {
+    color: #084d40; }
+    body a:hover {
+      cursor: default;
+      text-decoration: none;
+      font-weight: bold;
+      color: #084d40; }
+  body button {
+    cursor: default !important; }
   body .navbar-brand {
     padding: 3px;
     box-sizing: border-box; }
@@ -90,6 +181,8 @@ body {
       body .sub-nav .op-container .option {
         padding: 0 20px;
         display: inline-block; }
+  body #views {
+    margin-top: 50px; }
 
 footer ul {
   list-style: none;

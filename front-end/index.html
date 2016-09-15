@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>eCommerce Site</title>
+    <title>DC Roasters</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
     <link type="text/css" rel="stylesheet" href="css/styles.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"/>
   </head>
   <body ng-controller="mainController">
-    <nav id="top" class="nav navbar-default">
+    <nav id="top" class="nav navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><img src="css/images/brand.png"/></a>
@@ -25,22 +25,21 @@
         <div id="navbar-collapse-1" class="collapse navbaar-collapse"></div>
         <ul class="nav navbar-nav navbar-right">
           <li ng-show="loggedOut"> <a href="#">Hello, {{username}}</a></li>
-          <li ng-hide="loggedOut"><a ng-href="#/register">Sign Up</a></li>
-          <li ng-hide="loggedOut"><a ng-href="#/login">Log In</a></li>
-          <li ng-show="loggedOut"><a ng-href="#/logout">Log Out</a></li>
+          <li ng-hide="loggedOut"><a ng-href="#/register">SIGN UP</a></li>
+          <li ng-hide="loggedOut"><a ng-href="#/login">LOG IN</a></li>
+          <li ng-show="loggedOut"><a ng-href="#/logout">LOG OUT</a></li>
         </ul>
       </div>
     </nav>
     <div id="views" ng-view="ng-view"></div>
     <footer class="text-center">
       <ul>
-        <li>Home</li>
-        <li>Selection</li>
-        <li>Shipping</li>
-        <li>Payment</li>
-        <li>Confirmation</li>
+        <li> <a href="#/">HOME</a></li>
+        <li> <a href="#/options">SELECTION</a></li>
+        <li> <a href="#/shipping">SHIPPING</a></li>
+        <li> <a href="#/payment">PAYMENT</a></li>
+        <li> <a href="#/confirmation">CONFIRMATION</a></li>
       </ul>
-      <div><a>Up to Top</a></div>
       <p>DC Roasters | All Rights Reserved</p>
     </footer>
   </body>

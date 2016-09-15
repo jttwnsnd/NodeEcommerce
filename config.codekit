@@ -285,6 +285,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/front-end\/compass\/sass\/layout\/_selection.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/layout\/_selection.sass",
+		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_selection.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
 	"\/front-end\/compass\/sass\/styles.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -675,21 +691,10 @@
 		},
 	"\/front-end\/js\/min\/server-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/front-end\/js\/min\/server-min.js",
 		"outputAbbreviatedPath": "\/front-end\/js\/min\/min\/server-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/front-end\/server.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/server.js",
-		"outputAbbreviatedPath": "\/front-end\/min\/server-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

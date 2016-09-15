@@ -13,7 +13,7 @@ var User = require('../models/user_model.js');
 mongoose.connect(mongoUrl);
 
 var bcrypt = require('bcrypt-nodejs');
-var randToken = require('rand-token');
+var randToken = require('rand-token').uid;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -56,7 +56,6 @@ router.post('/register', function(req, res, next) {
 					token: token
 					//Add tokenExpDate
 				});
-
 				userToAdd.save(function(error, documentAdded){
 					if(error){
 						res.json({
@@ -91,22 +90,23 @@ router.post('/login', function(req, res, next){
 			var token = randToken(32);
 			var tokenExpDate = Date.now();
 			if(loginResult){
+				User.update({username:document.username}, {token: token, tokenExpDate: tokenExpDate}).exec();
 				res.json({
 					success: 'userFound',
 					username: document.username,
-					token: token
+					token: token,
+					tokenExpDate: tokenExpDate
 				});
 			}else{
 				res.json({
 					failure: 'badPass'
 				});
 			}
-			User.update({username:document.username}, {token: token, tokenExpDate: tokenExpDate});
 		}
 	});
 });
 
-router.get('getUserData', function(req, res, next){
+router.get('/getUserData', function(req, res, next){
 	var userToken = req.query.token; //the XXX in ?token=XXXXX
 	if(userToken === undefined){
 		//no token was supplied
@@ -129,6 +129,11 @@ router.get('getUserData', function(req, res, next){
 			}
 		});
 	}
+	router.get('/options', function(req, res, next){
+		res.json({
+			message: 'success'
+		});
+	});
 });
 
 module.exports = router;

@@ -1,0 +1,28 @@
+@import 'components/mixins'
+@import 'configs/variables'
+
+button
+	cursor: default !important
+select
+	cursor: default !important
+.container-fluid
+	color: $main_accent
+#option-individual
+	+form-options($mid_accent, 30px, 10px, #333)
+	color: #fff
+	img
+		height: 300px
+		width: auto
+		border: 5px solid #684A2C
+
+#option-family
+	+form-options($mid_accent, 30px, 10px, #333)
+	color: #fff 
+	img
+		height: 300px
+		width: auto
+		border: 5px solid #684A2C
+
+#option-custom
+	+form-options($mid_accent, 0px, 10px, #333)
+	color: #fff 

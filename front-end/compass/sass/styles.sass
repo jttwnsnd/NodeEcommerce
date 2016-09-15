@@ -1,11 +1,22 @@
 @import 'layout/_login'
 @import 'layout/_main'
+@import 'configs/_variables'
+@import 'layout/_selection'
 
 body
-  background-color: #333
-  color: black
+  background-color: $lighter_accent
+  color: $main_accent
   margin: 0
   padding: 0
+  a
+    color: $main_accent
+    &:hover
+      cursor: default
+      text-decoration: none
+      font-weight: bold
+      color: $main_accent
+  button
+    cursor: default !important
   .navbar-brand
     img
       height: 96%
@@ -22,6 +33,8 @@ body
       .option
         padding: 0 20px
         display: inline-block
+  #views
+    margin-top: 50px
 footer
   ul
     list-style: none

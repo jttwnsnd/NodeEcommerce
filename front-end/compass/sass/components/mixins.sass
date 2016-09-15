@@ -4,5 +4,9 @@
 	border-right: $size solid transparent
 	border-bottom: $size solid transparent
 	position: absolute
-=spacer($color)
-	height: 80px
+=visual-lining-space($size1, $size2)
+	padding: $size1 $size2
+=form-options($color, $padding, $shadow, $shadow-color)
+	background-color: $color
+	padding: $padding
+	box-shadow: 0 0 $shadow 0 $shadow-color
