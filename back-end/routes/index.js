@@ -136,4 +136,13 @@ router.get('/getUserData', function(req, res, next){
 	});
 });
 
+router.get('/options', function(req, res, next){
+	User.update({
+		username: req.body.username
+	}, { weeklyTotal: req.body.weeklyTotal, grindType: req.body.grindType}).exec();
+	res.json({
+		message: 'updated'
+	});
+});
+
 module.exports = router;

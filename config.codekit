@@ -700,6 +700,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/front-end\/views\/delivery.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/front-end\/views\/delivery.jade",
+		"outputAbbreviatedPath": "\/front-end\/views\/delivery.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/front-end\/views\/login.html": {
 		"fileType": 8192,
 		"ignore": 1,

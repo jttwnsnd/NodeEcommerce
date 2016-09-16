@@ -31,15 +31,17 @@
         </ul>
       </div>
     </nav>
+    <div class="sub-nav nav navbar navbar-fixed-top text-center">
+      <ul>
+        <li> <a ng-class="getClass('/')" href="#/">HOME</a></li>
+        <li> <a ng-class="getClass('/options')" href="#/options">OPTIONS</a></li>
+        <li> <a ng-class="getClass('/shipping')" href="#/shipping">SHIPPING</a></li>
+        <li> <a ng-class="getClass('/payment')" href="#/payment">PAYMENT</a></li>
+        <li> <a ng-class="getClass('/confirmation')" href="#/confirmation">CONFIRMATION</a></li>
+      </ul>
+    </div>
     <div id="views" ng-view="ng-view"></div>
     <footer class="text-center">
-      <ul>
-        <li> <a href="#/">HOME</a></li>
-        <li> <a href="#/options">SELECTION</a></li>
-        <li> <a href="#/shipping">SHIPPING</a></li>
-        <li> <a href="#/payment">PAYMENT</a></li>
-        <li> <a href="#/confirmation">CONFIRMATION</a></li>
-      </ul>
       <p>DC Roasters | All Rights Reserved</p>
     </footer>
   </body>

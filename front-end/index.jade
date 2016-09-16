@@ -35,19 +35,21 @@ html(ng-app='ecommerceApp')
             a(ng-href="#/login") LOG IN
           li(ng-show="loggedOut")
             a(ng-href="#/logout") LOG OUT
-    #views(ng-view)
-    footer.text-center
+    .sub-nav.nav.navbar.navbar-fixed-top.text-center
       ul
         li 
-          a(href="#/") HOME
+          a(ng-class="getClass('/')", href="#/") HOME
         li 
-          a(href="#/options") SELECTION
+          a(ng-class="getClass('/options')", href="#/options") OPTIONS
         li 
-          a(href="#/shipping") SHIPPING
+          a(ng-class="getClass('/shipping')", href="#/shipping") SHIPPING
         li 
-          a(href="#/payment") PAYMENT
+          a(ng-class="getClass('/payment')", href="#/payment") PAYMENT
         li 
-          a(href="#/confirmation") CONFIRMATION
+          a(ng-class="getClass('/confirmation')", href="#/confirmation") CONFIRMATION
+    #views(ng-view)
+    footer.text-center
+      
       
       p DC Roasters | All Rights Reserved
 

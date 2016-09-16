@@ -6,7 +6,7 @@
       h4 Shipping is free, and you can skip any week.
   .row
     .col-sm-5.col-sm-offset-1
-      form(ng-submit='optionsForm_1')#option-individual
+      form(ng-submit='optionsForm(1)')#option-individual
         .col-sm-12.text-center#plan-individual
           h2 Individual Plan
           h5 For the those who drink solo
@@ -23,14 +23,14 @@
             h4 $0.50
         .row
           .col-sm-6.text-right
-             h4 Weekyl total:
+             h4 Weekly total:
           .col-sm-6.text-left
             h4 $7.00
         .row
           .col-sm-6.text-right
             h4 Grind Type
           .col-sm-6.text-left
-            select.btn.btn-default.dropdown(ng-model="grindTypeSolo", ng-options="grind.option for grind in grinds")
+            select.btn.btn-default.dropdown.selections(ng-model="grindTypeSolo", ng-options="grind.option for grind in grinds")
               option(value="?", selected="selected")
               option(label="Extra Coarse", value="object:16") Extra Coarse
               option(label="Coarse", value="object:17") Coarse
@@ -40,14 +40,14 @@
               option(label="Fine", value="object:21") Fine
               option(label="Extra Fine", value="object:22") Extra Fine
         .row
-          button.btn.btn-default.center-block(type="submit") Submit
+          button.btn.btn-default.send-it.center-block(type="submit") Submit
         .row
           .col-sm-12.text-center
             h5 FREE Shipping!
             //- put check box here for auto shipping
 
     .col-sm-5
-        form(ng-submit='optionsForm_2')#option-family
+        form(ng-submit='optionsForm(2)')#option-family
           .col-sm-12.text-center#plan_family
             h2 Family Plan
             h5 For those who drink together
@@ -64,14 +64,14 @@
               h4 $0.45
           .row
             .col-sm-6.text-right
-               h4 Weekyl total:
+               h4 Weekly total:
             .col-sm-6.text-left
               h4 $18.00
           .row
             .col-sm-6.text-right
               h4 Grind Type
             .col-sm-6.text-left
-              select.btn.btn-default.dropdown(ng-model="grindTypeSolo", ng-options="grind.option for grind in grinds")
+              select.btn.btn-default.dropdown.selections(ng-model="grindTypeFamily", ng-options="grind.option for grind in grinds")
                 option(value="?", selected="selected")
                 option(label="Extra Coarse", value="object:16") Extra Coarse
                 option(label="Coarse", value="object:17") Coarse
@@ -81,7 +81,7 @@
                 option(label="Fine", value="object:21") Fine
                 option(label="Extra Fine", value="object:22") Extra Fine
           .row
-            button.btn.btn-default.center-block(ng-submit="", type="submit") Submit
+            button.btn.btn-default.send-it.center-block(ng-submit="", type="submit") Submit
           .row
             .col-sm-12.text-center
               h5 FREE Shipping!
@@ -89,47 +89,52 @@
     .col-sm-12.text-center#customize-order
       h2 Want to customize your order?
       h4 No problem. Make your selections below.
-  form#option-custom(ng-submit="optionsForm_3")
-    .row
-      .col-sm-10.col-sm-offset-1.custom-divs
-        .col-sm-6
-          .col-sm-6.col-sm-offset-3
-            img(src="css/images/calendar.png").img-responsive
-        .col-sm-6.custom-text
-          h4 1. FREQUENCY
-          h6 How often would you like us to send your coffee to you?
-          select.btn.btn-default.dropdown(ng-model="frequency", ng-options="frequencies for frequencies in frequencies")
-            option(selected="selected") Weekly
-            option(label="Weekly", value="string:Weekly") Weekly
-            option(label="Bi-Weekly", value="string:Bi-Weekly") Bi-Weekly
-            option(label="Monthly", value="string:Monthly") Monthly
-          h6 You can cancel at any time. You can skip at any time.
-    .row
-      .col-sm-10.col-sm-offset-1.custom-divs
-        .col-sm-6
-          .col-sm-6.col-sm-offset-3
-            img(src="css/images/scale.png").img-responsive
-        .col-sm-6.custom-text
-            h4 2. QUANTITY
-            h6 How many pounds (in increments of .25lb) would you like each delivery?
-            h6 $20.00/lb
-            input#quantity-input(ng-model='quantity')
-    .row
-      .col-sm-10.col-sm-offset-1.custom-divs
-        .col-sm-6
-          .col-sm-6.col-sm-offset-3
-            img(src="css/images/beans.png").img-responsive
-        .col-sm-6.custom-text
-            h4 3. GRIND TYPE
-            h6 What grind type would you like?
-            select.btn.btn-default.dropdown(ng-model="grindTypeCustom", ng-options="grind.option for grind in grinds")
-              option(value="?", selected="selected")
-              option(label="Extra Coarse", value="object:16") Extra Coarse
-              option(label="Coarse", value="object:17") Coarse
-              option(label="Medium-Coarse", value="object:18") Medium-Coarse
-              option(label="Medium", value="object:19") Medium
-              option(label="Medium-Fine", value="object:20") Medium-Fine
-              option(label="Fine", value="object:21") Fine
-              option(label="Extra Fine", value="object:22") Extra Fine
-    .row
-      button.btn-btn-default.center-block(type="submit") SUBMIT
+    .col-sm-10.col-sm-offset-1
+      form#option-custom(ng-submit="optionsForm(3)")
+        .row
+          .col-sm-10.col-sm-offset-1.custom-divs
+            .col-sm-6
+              .col-sm-6.col-sm-offset-3
+                img(src="css/images/calendar.png").img-responsive
+            .col-sm-6.custom-text
+              h4 1. FREQUENCY
+              h6 How often would you like us to send your coffee to you?
+              select.btn.btn-default.dropdown(ng-model="frequency", ng-options="frequencies for frequencies in frequencies")
+                option(selected="selected") Weekly
+                option(label="Weekly", value="string:Weekly") Weekly
+                option(label="Bi-Weekly", value="string:Bi-Weekly") Bi-Weekly
+                option(label="Monthly", value="string:Monthly") Monthly
+              h6 You can cancel at any time. You can skip at any time.
+        hr
+        .row
+          .col-sm-10.col-sm-offset-1.custom-divs
+            .col-sm-6
+              .col-sm-6.col-sm-offset-3
+                img(src="css/images/scale.png").img-responsive
+            .col-sm-6.custom-text
+                h4 2. QUANTITY
+                h6 How many pounds (in increments of .25lb) would you like each delivery?
+                h6 $20.00/lb
+                input#quantity-input(ng-model='quantity')
+        hr
+        .row
+          .col-sm-10.col-sm-offset-1.custom-divs
+            .col-sm-6
+              .col-sm-6.col-sm-offset-3
+                img(src="css/images/beans.png").img-responsive
+            .col-sm-6.custom-text
+                h4 3. GRIND TYPE
+                h6 What grind type would you like?
+                select.btn.btn-default.dropdown(ng-model="grindTypeCustom", ng-options="grind.option for grind in grinds")
+                  option(value="?", selected="selected")
+                  option(label="Extra Coarse", value="object:16") Extra Coarse
+                  option(label="Coarse", value="object:17") Coarse
+                  option(label="Medium-Coarse", value="object:18") Medium-Coarse
+                  option(label="Medium", value="object:19") Medium
+                  option(label="Medium-Fine", value="object:20") Medium-Fine
+                  option(label="Fine", value="object:21") Fine
+                  option(label="Extra Fine", value="object:22") Extra Fine
+        hr
+        .row
+          .col-sm-12
+            button.btn.btn-default.send-it.center-block(type="submit") SUBMIT

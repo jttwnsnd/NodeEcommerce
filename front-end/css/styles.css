@@ -16,21 +16,21 @@
   width: 50px; }
 
 .land_img {
-  height: 440px;
+  height: 390px;
   width: auto;
   background-image: url("images/coffee.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: center -250px; }
+  background-position: center 75%; }
 
 .transition_landing {
   position: relative;
-  bottom: -25px;
+  bottom: -80%;
   height: 100px;
   background-image: linear-gradient(transparent 0%, #EDEBE6 80%); }
 
 .visual-lining {
-  padding: 230px 0 0 100px; }
+  padding: 150px 0 0 100px; }
   .visual-lining .title {
     color: #084d40;
     font-weight: bold;
@@ -39,18 +39,21 @@
     color: #084d40;
     font-size: 18px;
     font-style: italic;
-    margin-left: 5px; }
+    margin-left: 1%; }
 
 .visual-lining-options {
   color: #084d40;
-  padding: 150px 500px; }
+  display: inline-block;
+  padding: 150px 0px;
+  padding-right: 0px;
+  padding-bottom: 0px; }
   .visual-lining-options .options-title {
     color: #084d40;
     font-size: 35px;
     font-weight: bold; }
   .visual-lining-options .options {
     color: #084d40;
-    margin-left: 5px;
+    margin-left: 1%;
     font-size: 18px;
     font-style: italic; }
 
@@ -68,7 +71,7 @@
     border-bottom: 50px solid transparent;
     position: absolute;
     top: 100%;
-    left: 46.5%;
+    left: 47.5%;
     z-index: 20; }
 
 .first_img {
@@ -83,7 +86,7 @@
     border-bottom: 50px solid transparent;
     position: absolute;
     top: 100%;
-    left: 46.5%;
+    left: 47.5%;
     z-index: 20; }
 
 .second_img {
@@ -97,16 +100,17 @@
     border-bottom: 50px solid transparent;
     position: absolute;
     top: 100%;
-    left: 46.5%;
+    left: 47.5%;
     z-index: 20; }
-  .second_img .image_skewed img {
-    transform: rotateZ(30%);
-    height: 20px; }
+  .second_img .image_skewed #grower {
+    height: 300px;
+    background-image: url("images/grower.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    transform: rotateZ(-10deg) translateY(25%) translateX(25%); }
   .second_img .visual-lining-with-image {
     color: #084d40;
-    position: relative;
-    padding: 150px 100px;
-    right: -40%; }
+    padding: 150px 0px; }
     .second_img .visual-lining-with-image .options-title {
       color: #084d40;
       font-size: 35px;
@@ -117,14 +121,74 @@
       font-size: 18px;
       font-style: italic; }
 
-button {
-  cursor: default !important; }
+.third_img {
+  height: 440px;
+  background-color: black;
+  position: relative; }
+  .third_img .visual-lining-with-image {
+    color: #084d40;
+    padding: 150px 0px; }
+    .third_img .visual-lining-with-image .options-title {
+      color: #fff;
+      font-size: 35px;
+      font-weight: bold; }
+    .third_img .visual-lining-with-image .options {
+      color: #fff;
+      margin-left: 5px;
+      font-size: 18px;
+      font-style: italic; }
+  .third_img .steamy-coffee {
+    height: 100%;
+    background-image: url("images/steaming.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center; }
+  .third_img .triangle {
+    border-top: 50px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 47.5%;
+    z-index: 20; }
+
+.action_landing {
+  padding: 0px; }
+  .action_landing .action_group {
+    padding: 50px 0px 20px 0px; }
+    .action_landing .action_group #started {
+      margin: 35px;
+      background-color: #084d40;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 25px;
+      border: 1px solid #084d40; }
+      .action_landing .action_group #started:hover {
+        color: #8D5810; }
+
+button.send-it {
+  margin: 10px auto;
+  cursor: default !important;
+  background-color: #084d40;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 40px;
+  border: 1px solid #084d40; }
+  button.send-it:hover {
+    color: #8D5810; }
 
 select {
   cursor: default !important; }
 
+.selections {
+  margin: 11px 0px; }
+
 .container-fluid {
   color: #084d40; }
+
+input, select {
+  outline: none !important; }
 
 #option-individual {
   background-color: #6A4A2C;
@@ -151,19 +215,34 @@ select {
   padding: 0px;
   box-shadow: 0 0 10px 0 #333;
   color: #fff; }
+  #option-custom .custom-divs {
+    border: 1px solid #6A4A2C;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  #option-custom .custom-text {
+    margin-top: 80px; }
 
 body {
   background-color: #EDEBE6;
   color: #084d40;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
   body a {
-    color: #084d40; }
+    color: #EDEBE6;
+    transition: all 0.5s ease; }
+    body a .active {
+      font-weight: bold; }
+    body a:visited {
+      cursor: default;
+      text-decoration: none;
+      color: #EDEBE6; }
     body a:hover {
       cursor: default;
       text-decoration: none;
-      font-weight: bold;
-      color: #084d40; }
+      color: #8D5810; }
   body button {
     cursor: default !important; }
   body .navbar-brand {
@@ -175,23 +254,23 @@ body {
   body .sub-nav {
     background-color: #084d40;
     height: 30px;
-    line-height: 30px; }
-    body .sub-nav .op-container {
-      text-align: center; }
-      body .sub-nav .op-container .option {
-        padding: 0 20px;
-        display: inline-block; }
+    line-height: 30px;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    left: 0;
+    z-index: 1030; }
+    body .sub-nav ul {
+      list-style: none;
+      -webkit-margin-before: 0em;
+      -webkit-margin-after: 0em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      -webkit-padding-start: 0px;
+      margin: 5px; }
+      body .sub-nav ul li {
+        display: inline-block;
+        padding: 5px;
+        font-size: 18px; }
   body #views {
-    margin-top: 50px; }
-
-footer ul {
-  list-style: none;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px;
-  margin: 5px; }
-  footer ul li {
-    display: inline-block;
-    padding: 5px; }
+    margin-top: 100px; }

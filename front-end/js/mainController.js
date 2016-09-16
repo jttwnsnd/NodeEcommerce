@@ -63,12 +63,12 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 			console.log(response.data);
 		});
 	};
+	//whe login is invoked
 	$scope.login = function(){
 		$http.post(apiPath + '/login', {
 			username: $scope.username,
 			password: $scope.password,
 		}).then(function successCallback(response) {
-			// console.log(response);
 			if(response.data.failure === 'badPass'){
 				$scope.errorMessage = true;
 				$scope.noMatch = true;
@@ -84,7 +84,6 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 				$cookies.put('username', $scope.username);
 				$location.path('/options');
 				console.log(response.data);
-				//v0QVzyxZBiPd71jOVMSzgyzt81eIF9vx
 			}
 			if(response.data.failure === 'noUser'){
 				console.log('Incorrect password');
@@ -93,6 +92,14 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 			console.log(response);
 		});
 	};
+	
+	$scope.$watch(function(){
+		return $location.path();
+	}, function(newPath){
+		if(newPath === '/payment'){
+			console.log('hello');
+		}
+	});
 	//$scope.addToCart = function(idOfThingClickedOn){
 		//var oldCart = $cookies.get('cart');
 		//var newCart = oldCart + ',' + idOfThingClickedOn;
@@ -112,6 +119,32 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 		$cookies.remove('token');
 		$cookies.remove('username');
 		console.log();
+	};
+	
+	//select your options and submit them to Mongo
+	$scope.optionsForm = function(form){
+		var weeklyTotal, grindType;
+		if(form === 1){
+			weeklyTotal = '$7.00';
+			grindType = $scope.grindTypeSolo;
+		}else if(form === 2){
+			weeklyTotal = '$18.00';
+			grindType = $scope.grindTypeFamily;
+		}else{
+			weeklyTotal = String(20 * $scope.quantity);
+			grindType = $scope.grindTypeCustom;
+		}
+		$http.post(apiPath + '/options', {
+			username: $cookies.get('username'),
+			weeklyTotal: weeklyTotal,
+			grindType: grindType
+		}).then(function successCallback(response){
+			if(response.data.message="updated"){
+				$location.path('/');
+			}
+		}, function errorCallback(response){
+			console.log(response);
+		});
 	};
 	function checkToken() {
 		if($cookies.get('token')){
