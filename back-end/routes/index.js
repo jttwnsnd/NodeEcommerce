@@ -5,7 +5,7 @@ var router = express.Router();
 //include mongoose module
 var mongoose = require('mongoose');
 //the url mongo connects to, and the port mongo is listening to
-var mongoUrl = 'mongodb://jt-townsend.com:27017/ecommerce';
+var mongoUrl = 'mongodb://localhost:27017/ecommerce';
 //set up user model. it is a mongoose model, and automatically
 //uses db that mongoose connects to
 var User = require('../models/user_model.js');
