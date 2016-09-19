@@ -154,24 +154,24 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/front-end\/compass\/css\/mixins.css": {
+	"\/compass\/css\/mixins.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/css\/mixins.css",
+		"inputAbbreviatedPath": "\/compass\/css\/mixins.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/front-end\/compass\/sass\/components\/_misc-rtl.scss": {
+	"\/compass\/sass\/components\/_misc-rtl.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/components\/_misc-rtl.scss",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_misc-rtl.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/components\/_misc-rtl.scss",
+		"outputAbbreviatedPath": "\/compass\/css\/_misc-rtl.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -179,15 +179,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/front-end\/compass\/sass\/components\/_misc.scss": {
+	"\/compass\/sass\/components\/_misc.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/components\/_misc.scss",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_misc.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/components\/_misc.scss",
+		"outputAbbreviatedPath": "\/compass\/css\/_misc.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -195,15 +195,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/front-end\/compass\/sass\/components\/mixins.sass": {
+	"\/compass\/sass\/components\/mixins.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/components\/mixins.sass",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/mixins.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/components\/mixins.sass",
+		"outputAbbreviatedPath": "\/compass\/css\/mixins.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -211,15 +211,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/front-end\/compass\/sass\/configs\/_variables.sass": {
+	"\/compass\/sass\/configs\/_variables.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/configs\/_variables.sass",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_variables.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/configs\/_variables.sass",
+		"outputAbbreviatedPath": "\/compass\/css\/_variables.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -227,15 +227,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/front-end\/compass\/sass\/layout\/_delivery.sass": {
+	"\/compass\/sass\/layout\/_delivery.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/layout\/_delivery.sass",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_delivery.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/layout\/_delivery.sass",
+		"outputAbbreviatedPath": "\/compass\/css\/_delivery.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -243,15 +243,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/front-end\/compass\/sass\/layout\/_footer.scss": {
+	"\/compass\/sass\/layout\/_footer.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/layout\/_footer.scss",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_footer.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/layout\/_footer.scss",
+		"outputAbbreviatedPath": "\/compass\/css\/_footer.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -259,15 +259,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/front-end\/compass\/sass\/layout\/_header.scss": {
+	"\/compass\/sass\/layout\/_header.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/layout\/_header.scss",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_header.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/layout\/_header.scss",
+		"outputAbbreviatedPath": "\/compass\/css\/_header.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -275,15 +275,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/front-end\/compass\/sass\/layout\/_layout.scss": {
+	"\/compass\/sass\/layout\/_layout.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/layout\/_layout.scss",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_layout.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/layout\/_layout.scss",
+		"outputAbbreviatedPath": "\/compass\/css\/_layout.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -291,15 +291,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/front-end\/compass\/sass\/layout\/_login.sass": {
+	"\/compass\/sass\/layout\/_login.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/layout\/_login.sass",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_login.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/layout\/_login.sass",
+		"outputAbbreviatedPath": "\/compass\/css\/_login.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -307,15 +307,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/front-end\/compass\/sass\/layout\/_main.sass": {
+	"\/compass\/sass\/layout\/_main.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/layout\/_main.sass",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_main.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/layout\/_main.sass",
+		"outputAbbreviatedPath": "\/compass\/css\/_main.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -323,15 +323,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/front-end\/compass\/sass\/layout\/_selection.sass": {
+	"\/compass\/sass\/layout\/_selection.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/layout\/_selection.sass",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_selection.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/layout\/_selection.sass",
+		"outputAbbreviatedPath": "\/compass\/css\/_selection.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -339,24 +339,24 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/front-end\/compass\/sass\/styles.css": {
+	"\/compass\/sass\/styles.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/styles.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/styles.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/front-end\/compass\/sass\/styles.sass": {
+	"\/compass\/sass\/styles.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/styles.sass",
-		"outputAbbreviatedPath": "\/front-end\/css\/styles.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/styles.sass",
+		"outputAbbreviatedPath": "\/css\/styles.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -364,15 +364,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/front-end\/compass\/sass\/views\/_account.scss": {
+	"\/compass\/sass\/views\/_account.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/views\/_account.scss",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_account.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/views\/_account.scss",
+		"outputAbbreviatedPath": "\/compass\/css\/_account.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -380,15 +380,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/front-end\/compass\/sass\/views\/_choices.scss": {
+	"\/compass\/sass\/views\/_choices.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/views\/_choices.scss",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_choices.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/views\/_choices.scss",
+		"outputAbbreviatedPath": "\/compass\/css\/_choices.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -396,15 +396,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/front-end\/compass\/sass\/views\/_delivery.scss": {
+	"\/compass\/sass\/views\/_delivery.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/views\/_delivery.scss",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_delivery.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/views\/_delivery.scss",
+		"outputAbbreviatedPath": "\/compass\/css\/_delivery.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -412,15 +412,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/front-end\/compass\/sass\/views\/_home.scss": {
+	"\/compass\/sass\/views\/_home.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/views\/_home.scss",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_home.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/views\/_home.scss",
+		"outputAbbreviatedPath": "\/compass\/css\/_home.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -428,15 +428,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/front-end\/compass\/sass\/views\/_payment.scss": {
+	"\/compass\/sass\/views\/_payment.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/views\/_payment.scss",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_payment.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/views\/_payment.scss",
+		"outputAbbreviatedPath": "\/compass\/css\/_payment.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -444,15 +444,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/front-end\/compass\/sass\/views\/_subscribe.scss": {
+	"\/compass\/sass\/views\/_subscribe.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/views\/_subscribe.scss",
-		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_subscribe.css",
+		"inputAbbreviatedPath": "\/compass\/sass\/views\/_subscribe.scss",
+		"outputAbbreviatedPath": "\/compass\/css\/_subscribe.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -460,403 +460,283 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/front-end\/css\/images\/bags.jpg": {
+	"\/css\/images\/bags.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 242752,
-		"inputAbbreviatedPath": "\/front-end\/css\/images\/bags.jpg",
-		"outputAbbreviatedPath": "\/front-end\/css\/images\/bags.jpg",
+		"inputAbbreviatedPath": "\/css\/images\/bags.jpg",
+		"outputAbbreviatedPath": "\/css\/images\/bags.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/front-end\/css\/images\/beans.png": {
+	"\/css\/images\/beans.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 13170,
-		"inputAbbreviatedPath": "\/front-end\/css\/images\/beans.png",
-		"outputAbbreviatedPath": "\/front-end\/css\/images\/beans.png",
+		"inputAbbreviatedPath": "\/css\/images\/beans.png",
+		"outputAbbreviatedPath": "\/css\/images\/beans.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/front-end\/css\/images\/brand.png": {
+	"\/css\/images\/brand.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 13998,
-		"inputAbbreviatedPath": "\/front-end\/css\/images\/brand.png",
-		"outputAbbreviatedPath": "\/front-end\/css\/images\/brand.png",
+		"inputAbbreviatedPath": "\/css\/images\/brand.png",
+		"outputAbbreviatedPath": "\/css\/images\/brand.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/front-end\/css\/images\/calendar.png": {
+	"\/css\/images\/calendar.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 6238,
-		"inputAbbreviatedPath": "\/front-end\/css\/images\/calendar.png",
-		"outputAbbreviatedPath": "\/front-end\/css\/images\/calendar.png",
+		"inputAbbreviatedPath": "\/css\/images\/calendar.png",
+		"outputAbbreviatedPath": "\/css\/images\/calendar.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/front-end\/css\/images\/coffee.jpg": {
+	"\/css\/images\/coffee.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 115898,
-		"inputAbbreviatedPath": "\/front-end\/css\/images\/coffee.jpg",
-		"outputAbbreviatedPath": "\/front-end\/css\/images\/coffee.jpg",
+		"inputAbbreviatedPath": "\/css\/images\/coffee.jpg",
+		"outputAbbreviatedPath": "\/css\/images\/coffee.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/front-end\/css\/images\/drinker.jpg": {
+	"\/css\/images\/drinker.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 144298,
-		"inputAbbreviatedPath": "\/front-end\/css\/images\/drinker.jpg",
-		"outputAbbreviatedPath": "\/front-end\/css\/images\/drinker.jpg",
+		"inputAbbreviatedPath": "\/css\/images\/drinker.jpg",
+		"outputAbbreviatedPath": "\/css\/images\/drinker.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/front-end\/css\/images\/drinkers.jpg": {
+	"\/css\/images\/drinkers.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 60724,
-		"inputAbbreviatedPath": "\/front-end\/css\/images\/drinkers.jpg",
-		"outputAbbreviatedPath": "\/front-end\/css\/images\/drinkers.jpg",
+		"inputAbbreviatedPath": "\/css\/images\/drinkers.jpg",
+		"outputAbbreviatedPath": "\/css\/images\/drinkers.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/front-end\/css\/images\/glyphicons-204-lock.png": {
+	"\/css\/images\/glyphicons-204-lock.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 1331,
-		"inputAbbreviatedPath": "\/front-end\/css\/images\/glyphicons-204-lock.png",
-		"outputAbbreviatedPath": "\/front-end\/css\/images\/glyphicons-204-lock.png",
+		"inputAbbreviatedPath": "\/css\/images\/glyphicons-204-lock.png",
+		"outputAbbreviatedPath": "\/css\/images\/glyphicons-204-lock.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/front-end\/css\/images\/grower.jpg": {
+	"\/css\/images\/grower.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 52028,
-		"inputAbbreviatedPath": "\/front-end\/css\/images\/grower.jpg",
-		"outputAbbreviatedPath": "\/front-end\/css\/images\/grower.jpg",
+		"inputAbbreviatedPath": "\/css\/images\/grower.jpg",
+		"outputAbbreviatedPath": "\/css\/images\/grower.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/front-end\/css\/images\/menu.png": {
+	"\/css\/images\/menu.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 19279,
-		"inputAbbreviatedPath": "\/front-end\/css\/images\/menu.png",
-		"outputAbbreviatedPath": "\/front-end\/css\/images\/menu.png",
+		"inputAbbreviatedPath": "\/css\/images\/menu.png",
+		"outputAbbreviatedPath": "\/css\/images\/menu.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/front-end\/css\/images\/menua.png": {
+	"\/css\/images\/menua.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 4693,
-		"inputAbbreviatedPath": "\/front-end\/css\/images\/menua.png",
-		"outputAbbreviatedPath": "\/front-end\/css\/images\/menua.png",
+		"inputAbbreviatedPath": "\/css\/images\/menua.png",
+		"outputAbbreviatedPath": "\/css\/images\/menua.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/front-end\/css\/images\/scale.png": {
+	"\/css\/images\/scale.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 11101,
-		"inputAbbreviatedPath": "\/front-end\/css\/images\/scale.png",
-		"outputAbbreviatedPath": "\/front-end\/css\/images\/scale.png",
+		"inputAbbreviatedPath": "\/css\/images\/scale.png",
+		"outputAbbreviatedPath": "\/css\/images\/scale.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/front-end\/css\/images\/steaming.jpg": {
+	"\/css\/images\/steaming.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 27552,
-		"inputAbbreviatedPath": "\/front-end\/css\/images\/steaming.jpg",
-		"outputAbbreviatedPath": "\/front-end\/css\/images\/steaming.jpg",
+		"inputAbbreviatedPath": "\/css\/images\/steaming.jpg",
+		"outputAbbreviatedPath": "\/css\/images\/steaming.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/front-end\/css\/styles.css": {
+	"\/css\/styles.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/css\/styles.css",
+		"inputAbbreviatedPath": "\/css\/styles.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/front-end\/index.html": {
+	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/index.html",
+		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/front-end\/index.jade": {
+	"\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/index.jade",
-		"outputAbbreviatedPath": "\/front-end\/index.html",
+		"inputAbbreviatedPath": "\/index.jade",
+		"outputAbbreviatedPath": "\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/front-end\/js\/angular-cookies.min.js": {
+	"\/js\/angular-cookies.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/js\/angular-cookies.min.js",
-		"outputAbbreviatedPath": "\/front-end\/js\/min\/angular-cookies.min-min.js",
+		"inputAbbreviatedPath": "\/js\/angular-cookies.min.js",
+		"outputAbbreviatedPath": "\/js\/min\/angular-cookies.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/front-end\/js\/angular-route.min.js": {
+	"\/js\/angular-route.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/js\/angular-route.min.js",
-		"outputAbbreviatedPath": "\/front-end\/js\/min\/angular-route.min-min.js",
+		"inputAbbreviatedPath": "\/js\/angular-route.min.js",
+		"outputAbbreviatedPath": "\/js\/min\/angular-route.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/front-end\/js\/controller.js": {
+	"\/js\/controller.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/js\/controller.js",
-		"outputAbbreviatedPath": "\/front-end\/js\/min\/controller-min.js",
+		"inputAbbreviatedPath": "\/js\/controller.js",
+		"outputAbbreviatedPath": "\/js\/min\/controller-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/front-end\/js\/Express.htm": {
+	"\/js\/Express.htm": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/js\/Express.htm",
+		"inputAbbreviatedPath": "\/js\/Express.htm",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/front-end\/js\/Express_files\/style.css": {
+	"\/js\/Express_files\/style.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/js\/Express_files\/style.css",
+		"inputAbbreviatedPath": "\/js\/Express_files\/style.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/front-end\/js\/main.jade": {
+	"\/js\/main.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/js\/main.jade",
-		"outputAbbreviatedPath": "\/front-end\/js\/main.html",
+		"inputAbbreviatedPath": "\/js\/main.jade",
+		"outputAbbreviatedPath": "\/js\/main.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/front-end\/js\/mainController.js": {
+	"\/js\/mainController.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/js\/mainController.js",
-		"outputAbbreviatedPath": "\/front-end\/js\/min\/mainController-min.js",
+		"inputAbbreviatedPath": "\/js\/mainController.js",
+		"outputAbbreviatedPath": "\/js\/min\/mainController-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/front-end\/js\/min\/controller-min.js": {
+	"\/js\/min\/controller-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/js\/min\/controller-min.js",
-		"outputAbbreviatedPath": "\/front-end\/js\/min\/min\/controller-min-min.js",
+		"inputAbbreviatedPath": "\/js\/min\/controller-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/controller-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/front-end\/js\/min\/mainController-min.js": {
+	"\/js\/min\/mainController-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/js\/min\/mainController-min.js",
-		"outputAbbreviatedPath": "\/front-end\/js\/min\/min\/mainController-min-min.js",
+		"inputAbbreviatedPath": "\/js\/min\/mainController-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/mainController-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/front-end\/js\/min\/server-min.js": {
+	"\/js\/min\/server-min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/js\/min\/server-min.js",
-		"outputAbbreviatedPath": "\/front-end\/js\/min\/min\/server-min-min.js",
+		"inputAbbreviatedPath": "\/js\/min\/server-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/server-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
-		},
-	"\/front-end\/views\/delivery.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/views\/delivery.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/front-end\/views\/delivery.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/views\/delivery.jade",
-		"outputAbbreviatedPath": "\/front-end\/views\/delivery.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/front-end\/views\/login.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/views\/login.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/front-end\/views\/login.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/views\/login.jade",
-		"outputAbbreviatedPath": "\/front-end\/views\/login.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/front-end\/views\/main.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/views\/main.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/front-end\/views\/main.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/views\/main.jade",
-		"outputAbbreviatedPath": "\/front-end\/views\/main.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/front-end\/views\/payment.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/views\/payment.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/front-end\/views\/payment.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/views\/payment.jade",
-		"outputAbbreviatedPath": "\/front-end\/views\/payment.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/front-end\/views\/register.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/views\/register.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/front-end\/views\/register.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/views\/register.jade",
-		"outputAbbreviatedPath": "\/front-end\/views\/register.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/front-end\/views\/selection.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/views\/selection.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/front-end\/views\/selection.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/views\/selection.jade",
-		"outputAbbreviatedPath": "\/front-end\/views\/selection.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
 		},
 	"\/readme.md": {
 		"criticStyle": 0,
@@ -878,6 +758,126 @@
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
+		},
+	"\/views\/delivery.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/delivery.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/views\/delivery.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/delivery.jade",
+		"outputAbbreviatedPath": "\/views\/delivery.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/views\/login.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/login.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/views\/login.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/login.jade",
+		"outputAbbreviatedPath": "\/views\/login.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/views\/main.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/main.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/views\/main.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/main.jade",
+		"outputAbbreviatedPath": "\/views\/main.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/views\/payment.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/payment.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/views\/payment.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/payment.jade",
+		"outputAbbreviatedPath": "\/views\/payment.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/views\/register.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/register.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/views\/register.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/register.jade",
+		"outputAbbreviatedPath": "\/views\/register.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/views\/selection.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/selection.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/views\/selection.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/selection.jade",
+		"outputAbbreviatedPath": "\/views\/selection.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
 		}
 	},
 "hooks": [
