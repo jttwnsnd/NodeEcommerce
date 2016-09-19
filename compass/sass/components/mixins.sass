@@ -1,0 +1,20 @@
+=triangle($color, $size)
+	border-top: $size solid $color
+	border-left: $size solid transparent
+	border-right: $size solid transparent
+	border-bottom: $size solid transparent
+	position: absolute
+=visual-lining-space($size1, $size2)
+	padding: $size1 $size2
+=form-options($color, $padding, $shadow, $shadow-color)
+	background-color: $color
+	padding: $padding
+	box-shadow: 0 0 $shadow 0 $shadow-color
+=submitButton($paddingTall, $paddingWide, $color, $hoverColor)
+	background-color: $color
+	color: #fff
+	font-weight: bold
+	padding: $paddingTall $paddingWide
+	border: 1px solid $color
+	&:hover
+		color: $hoverColor

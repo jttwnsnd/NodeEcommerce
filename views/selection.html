@@ -1,0 +1,184 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h1>Your Lifestyle. Your Plan.</h1>
+      <h4>Pick one that fits you the best.</h4>
+      <h4>Shipping is free, and you can skip any week.</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
+      <form ng-submit="optionsForm(1)" id="option-individual">
+        <div id="plan-individual" class="col-sm-12 text-center">
+          <h2>Individual Plan</h2>
+          <h5>For the those who drink solo</h5><img src="css/images/drinker.jpg"/>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 text-right">
+            <h4>Cups per week:</h4>
+          </div>
+          <div class="col-sm-6 text-left">
+            <h4>14</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 text-right">
+            <h4>Price per cup:</h4>
+          </div>
+          <div class="col-sm-6 text-left">
+            <h4>$0.50</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 text-right">
+            <h4>Weekly total:</h4>
+          </div>
+          <div class="col-sm-6 text-left">
+            <h4>$7.00</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 text-right">
+            <h4>Grind Type</h4>
+          </div>
+          <div class="col-sm-6 text-left">
+            <select ng-model="grindTypeSolo" ng-options="grind.option for grind in grinds" class="btn btn-default dropdown selections">
+              <option value="?" selected="selected"></option>
+              <option label="{grind}">{{grind}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <button type="submit" class="btn btn-default send-it center-block">Submit</button>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h5>FREE Shipping!</h5>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-5">
+      <form ng-submit="optionsForm(2)" id="option-family">
+        <div id="plan_family" class="col-sm-12 text-center">
+          <h2>Family Plan</h2>
+          <h5>For those who drink together</h5><img src="css/images/drinkers.jpg"/>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 text-right">
+            <h4>Cups per week:</h4>
+          </div>
+          <div class="col-sm-6 text-left">
+            <h4>40</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 text-right">
+            <h4>Price per cup:</h4>
+          </div>
+          <div class="col-sm-6 text-left">
+            <h4>$0.45</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 text-right">
+            <h4>Weekly total:</h4>
+          </div>
+          <div class="col-sm-6 text-left">
+            <h4>$18.00</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 text-right">
+            <h4>Grind Type</h4>
+          </div>
+          <div class="col-sm-6 text-left">
+            <select ng-model="grindTypeFamily" ng-options="grind.option for grind in grinds" class="btn btn-default dropdown selections">
+              <option value="?" selected="selected"></option>
+              <option label="{{grind}}" value="object:16">{{grind}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <button ng-submit="" type="submit" class="btn btn-default send-it center-block">Submit</button>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h5>FREE Shipping!</h5>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div id="customize-order" class="col-sm-12 text-center">
+      <h2>Want to customize your order?</h2>
+      <h4>No problem. Make your selections below.</h4>
+    </div>
+    <div class="col-sm-10 col-sm-offset-1">
+      <form id="option-custom" ng-submit="optionsForm(3)">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 custom-divs">
+            <div class="col-sm-6">
+              <div class="col-sm-6 col-sm-offset-3"><img src="css/images/calendar.png" class="img-responsive"/></div>
+            </div>
+            <div class="col-sm-6 custom-text">
+              <h4>1. FREQUENCY</h4>
+              <h6>How often would you like us to send your coffee to you?</h6>
+              <select ng-model="frequency" ng-options="frequencies for frequencies in frequencies" class="btn btn-default dropdown">
+                <option selected="selected">Weekly</option>
+                <option label="Weekly" value="string:Weekly">Weekly</option>
+                <option label="Bi-Weekly" value="string:Bi-Weekly">Bi-Weekly</option>
+                <option label="Monthly" value="string:Monthly">Monthly</option>
+              </select>
+              <h6>You can cancel at any time. You can skip at any time.</h6>
+            </div>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 custom-divs">
+            <div class="col-sm-6">
+              <div class="col-sm-6 col-sm-offset-3"><img src="css/images/scale.png" class="img-responsive"/></div>
+            </div>
+            <div class="col-sm-6 custom-text">
+              <h4>2. QUANTITY</h4>
+              <h6>How many pounds (in increments of .25lb) would you like each delivery?</h6>
+              <h6>$20.00/lb</h6>
+              <input id="quantity-input" ng-model="quantity"/>
+            </div>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 custom-divs">
+            <div class="col-sm-6">
+              <div class="col-sm-6 col-sm-offset-3"><img src="css/images/beans.png" class="img-responsive"/></div>
+            </div>
+            <div class="col-sm-6 custom-text">
+              <h4>3. GRIND TYPE</h4>
+              <h6>What grind type would you like?</h6>
+              <select ng-model="grindTypeCustom" ng-options="grind.option for grind in grinds" class="btn btn-default dropdown">
+                <option value="?" selected="selected"></option>
+                <option label="Extra Coarse" value="object:16">Extra Coarse</option>
+                <option label="Coarse" value="object:17">Coarse</option>
+                <option label="Medium-Coarse" value="object:18">Medium-Coarse</option>
+                <option label="Medium" value="object:19">Medium</option>
+                <option label="Medium-Fine" value="object:20">Medium-Fine</option>
+                <option label="Fine" value="object:21">Fine</option>
+                <option label="Extra Fine" value="object:22">Extra Fine</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-sm-12">
+            <button type="submit" class="btn btn-default send-it center-block">SUBMIT</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

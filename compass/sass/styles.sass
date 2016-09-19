@@ -1,0 +1,57 @@
+@import 'layout/_login'
+@import 'layout/_main'
+@import 'configs/_variables'
+@import 'layout/_selection'
+@import 'layout/_delivery'
+
+body
+  background-color: $lighter_accent
+  color: $main_accent
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+  a
+    color: $lighter_accent
+    transition: all .5s ease
+    .active
+      font-weight: bold
+    &:visited
+      cursor: default
+      text-decoration: none
+      color: $lighter_accent
+    &:hover
+      cursor: default
+      text-decoration: none
+      color: $hover
+  button
+    cursor: default !important
+  .navbar-brand
+    img
+      height: 96%
+      width: auto
+    padding: 3px
+    box-sizing: border-box
+  
+  .sub-nav
+    background-color: #084d40
+    height: 30px
+    line-height: 30px
+    position: fixed
+    top: 50px
+    right: 0
+    left: 0
+    z-index: 1030
+    ul
+      list-style: none
+      -webkit-margin-before: 0em
+      -webkit-margin-after: 0em
+      -webkit-margin-start: 0px
+      -webkit-margin-end: 0px
+      -webkit-padding-start: 0px
+      margin: 5px
+      li
+        display: inline-block
+        padding: 5px
+        font-size: 18px
+  #views
+    margin-top: 100px

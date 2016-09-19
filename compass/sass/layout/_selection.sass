@@ -1,0 +1,43 @@
+@import 'components/mixins'
+@import 'configs/variables'
+
+button
+	&.send-it
+		margin: 10px auto
+		cursor: default !important
+		+submitButton(5px, 40px, $main_accent, $hover)
+select
+	cursor: default !important
+.selections
+	margin: 11px 0px
+.container-fluid
+	color: $main_accent
+input, select
+	outline: none !important
+#option-individual
+	+form-options($mid_accent, 30px, 10px, #333)
+	color: #fff
+	img
+		height: 300px
+		width: auto
+		border: 5px solid #684A2C
+
+#option-family
+	+form-options($mid_accent, 30px, 10px, #333)
+	color: #fff 
+	img
+		height: 300px
+		width: auto
+		border: 5px solid #684A2C
+
+#option-custom
+	+form-options($mid_accent, 0px, 10px, #333)
+	color: #fff 
+	.custom-divs
+		border: 1px solid $mid_accent
+		border-radius: 5px
+		margin-bottom: 20px
+		padding-top: 10px
+		padding-bottom: 10px
+	.custom-text
+		margin-top: 80px
