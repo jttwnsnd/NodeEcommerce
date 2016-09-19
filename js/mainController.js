@@ -11,6 +11,38 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 	var liveSK = 'sk_live_7foZ0QdZJoeKyiUvFt0YT7LA';
 	var livePK = 'pk_live_drxWAZfUCsKUQUUVIOvLpbd6';
 
+	if (($location.path() == '/') && ($cookies.get('token') == undefined)){
+		setTimeout(instructionModalShow, 1000);
+		function instructionModalShow(){
+			$('#instruction-modal').show()
+			.css({
+				left: '0px',
+				top: '120px',
+				marginLeft: 'auto',
+				marginRight: 'auto'
+			});
+			$('.modal-text').html('For a complete experience, register with fake information');
+		};
+	}else if($location.path() == '/payment'){
+		setTimeout(cardNumberModal, 1000);
+		function cardNumberModal(){
+			$('#instruction-modal').show()
+			.css({
+				position: 'fixed',
+				left: '10px',
+				top: '165px',
+				margin: '0'
+			});
+			$('.modal-text').html('Use Card #<br>4242 4242 4242 4242<br>to test payment. <br>Any Exp Date. <br>Any CVC.');
+		};
+	}else{
+		$('#instruction-modal').hide();
+	}
+
+	// Close modals
+	$('.close-button').click(function(){
+		$('#instruction-modal').hide();
+	});
 
 	//arrays for my order forms to reference
 	$scope.frequencies = [
@@ -101,6 +133,13 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 			console.log(response);
 		});
 	};
+	$scope.go = function(){
+		if($cookies.get('token') === undefined){
+			$location.path('/login');
+		}else{
+			$location.path('/options');
+		}
+	}
 	$scope.payOrder = function() {
         $scope.errorMessage = "";
 

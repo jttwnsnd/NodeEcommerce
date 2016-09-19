@@ -3,13 +3,12 @@
     h3.modal-text.text-center 
   .row
     .col-sm-12.text-center
-      h1 Here's your order!
-      h4 Please insert your payment information
+      h1 Thank you for your order!
+      h4 Your order will be in shortly
     .col-sm-8.col-sm-offset-2.overview.text-center
       .row
         .col-sm-12
           h2 Choices
-          a.goback(href="#/options") edit
           .row.list-item
             .col-sm-6 
               h4 Grind
@@ -28,7 +27,6 @@
       .row
         .col-sm-12
           h2 Delivery Information
-          a.goback(ng-href="#/delivery") edit
           .row.list-item
             .col-sm-6 
               h4 Full Name
@@ -85,10 +83,5 @@
 
   .row
     .col-sm-10.col-sm-offset-1.text-center
-      button.btn.btn-default#custom-button(ng-click="payOrder()") Pay With Card
-      button.btn.btn-default.block-center(ng-submit="cancel()") Cancel Order
-      
-//- populate payment page
-//- create receipt page
-//- thank user
-//- save order into documents
+      button.btn.btn-default.block-center(ng-submit="logout()") MAKE ANOTHER ORDER
+      button.btn.btn-default.block-center(ng-submit="logout()") LOGOUT

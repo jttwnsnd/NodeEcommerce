@@ -5,13 +5,13 @@
   </div>
   <div class="row">
     <div class="col-sm-12 text-center">
-      <h1>Here's your order!</h1>
-      <h4>Please insert your payment information</h4>
+      <h1>Thank you for your order!</h1>
+      <h4>Your order will be in shortly</h4>
     </div>
     <div class="col-sm-8 col-sm-offset-2 overview text-center">
       <div class="row">
         <div class="col-sm-12">
-          <h2>Choices</h2><a href="#/options" class="goback">edit</a>
+          <h2>Choices</h2>
           <div class="row list-item">
             <div class="col-sm-6"> 
               <h4>Grind</h4>
@@ -40,7 +40,7 @@
       </div>
       <div class="row">
         <div class="col-sm-12">
-          <h2>Delivery Information</h2><a ng-href="#/delivery" class="goback">edit</a>
+          <h2>Delivery Information</h2>
           <div class="row list-item">
             <div class="col-sm-6"> 
               <h4>Full Name</h4>
@@ -132,8 +132,8 @@
   </div>
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1 text-center">
-      <button id="custom-button" ng-click="payOrder()" class="btn btn-default">Pay With Card</button>
-      <button ng-submit="cancel()" class="btn btn-default block-center">Cancel Order</button>
+      <button ng-submit="logout()" class="btn btn-default block-center">MAKE ANOTHER ORDER</button>
+      <button ng-submit="logout()" class="btn btn-default block-center">LOGOUT</button>
     </div>
   </div>
 </div>

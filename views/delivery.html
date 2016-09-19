@@ -10,7 +10,7 @@
     <div class="col-sm-6 col-sm-offset-3">
       <div class="delivery-box">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12 shipping">
             <div class="row">
               <div class="col-sm-12 text-center">
                 <h1>Address</h1>
@@ -20,36 +20,50 @@
               <div class="row">
                 <div class="col-sm-12 form-wrapper">
                   <form id="delivery-form" role="form" ng-submit="deliverForm()" name="delivery">
-                    <div class="form-group">
-                      <label>Full Name</label>
-                      <input type="text" ng-model="name" placeholder="John Doe" required="required" class="form-control"/>
+                    <div class="col-sm-12">
+                      <div class="col-sm-6 col-sm-offset-3 form-group">
+                        <label>Full Name</label>
+                        <input type="text" ng-model="name" placeholder="John Doe" required="required" class="form-control"/>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label>Address Line 1</label>
-                      <input type="text" ng-model="address1" placeholder="123 Sesame Street" required="required" class="form-control"/>
+                    <div class="col-sm-12">
+                      <div class="col-sm-6 col-sm-offset-3 form-group">
+                        <label>Address Line 1</label>
+                        <input type="text" ng-model="address1" placeholder="123 Sesame Street" required="required" class="form-control"/>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label>Address Line 2</label>
-                      <input type="text" ng-model="address2" placeholder="Apt 100" required="required" class="form-control"/>
+                    <div class="col-sm-12">
+                      <div class="col-sm-6 col-sm-offset-3 form-group">
+                        <label>Address Line 2</label>
+                        <input type="text" ng-model="address2" placeholder="Apt 100" required="required" class="form-control"/>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label>City</label>
-                      <input type="text" ng-model="city" placeholder="John Doe" required="required" class="form-control"/>
+                    <div class="col-sm-12">
+                      <div class="col-sm-6 col-sm-offset-3 form-group">
+                        <label>City</label>
+                        <input type="text" ng-model="city" placeholder="John Doe" required="required" class="form-control"/>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label>State</label><br/>
-                      <select ng-model="state" required="required" ng-options="state for state in states" class="btn btn-default state-dropdown">
-                        <option value="?" selected="selected"></option>
-                        <options value="{{state}}">{{state}}</options>
-                      </select>
+                    <div class="col-sm-12">
+                      <div class="col-sm-6 col-sm-offset-3 form-group">
+                        <label>State</label><br/>
+                        <select ng-model="state" required="required" ng-options="state for state in states" class="btn btn-default state-dropdown">
+                          <option value="?" selected="selected"></option>
+                          <options value="{{state}}">{{state}}</options>
+                        </select>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label>Zip Code</label>
-                      <input type="text" ng-model="zipCode" placeholder="John Doe" required="required" class="form-control"/>
+                    <div class="col-sm-12">
+                      <div class="col-sm-6 col-sm-offset-3 form-group">
+                        <label>Zip Code</label>
+                        <input type="text" ng-model="zipCode" placeholder="John Doe" required="required" class="form-control"/>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label>Delivery Date</label>
-                      <input id="date-picker" type="date" ng-model="deliveryDate" placeholder="John Doe" required="required" class="form-control"/>
+                    <div class="col-sm-12">
+                      <div class="col-sm-6 col-sm-offset-3 form-group">
+                        <label>Delivery Date</label>
+                        <input id="date-picker" type="date" ng-model="deliveryDate" placeholder="John Doe" required="required" class="form-control"/>
+                      </div>
                     </div>
                     <div class="button-holder">
                       <button type="submit" class="btn btn-default center-block">Submit</button>
