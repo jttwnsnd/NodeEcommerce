@@ -14,6 +14,7 @@
     <script type="text/javascript" src="js/mainController.js"></script>
     <script src="js/mainController.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"/>
   </head>
   <body ng-controller="mainController">
@@ -27,7 +28,7 @@
           <li ng-show="loggedOut"> <a href="#">Hello, {{username}}</a></li>
           <li ng-hide="loggedOut"><a ng-href="#/register">SIGN UP</a></li>
           <li ng-hide="loggedOut"><a ng-href="#/login">LOG IN</a></li>
-          <li ng-show="loggedOut"><a ng-href="#/logout">LOG OUT</a></li>
+          <li ng-show="loggedOut"><a ng-click="logout()">LOG OUT</a></li>
         </ul>
       </div>
     </nav>
@@ -35,7 +36,7 @@
       <ul>
         <li> <a ng-class="getClass('/')" href="#/">HOME</a></li>
         <li> <a ng-class="getClass('/options')" href="#/options">OPTIONS</a></li>
-        <li> <a ng-class="getClass('/shipping')" href="#/shipping">SHIPPING</a></li>
+        <li> <a ng-class="getClass('/shipping')" href="#/delivery">SHIPPING</a></li>
         <li> <a ng-class="getClass('/payment')" href="#/payment">PAYMENT</a></li>
         <li> <a ng-class="getClass('/confirmation')" href="#/confirmation">CONFIRMATION</a></li>
       </ul>

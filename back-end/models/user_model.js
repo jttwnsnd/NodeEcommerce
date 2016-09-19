@@ -12,8 +12,10 @@ var userSchema = new Schema({
 	tokenExpDate: Date,
 	plan: String,
 	frequency: String,
+	amount: Number,
 	weeklyTotal: String,
-	grindType: String,
+	grindType: Object,
+	fullName: String,
 	address: Object,
 	order: Array
 }, {timestamps: true});

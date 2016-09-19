@@ -12,8 +12,13 @@ var User = require('../models/user_model.js');
 //connect mongoose using mongoUrl
 mongoose.connect(mongoUrl);
 
+//for security of passwords
 var bcrypt = require('bcrypt-nodejs');
 var randToken = require('rand-token').uid;
+//my test secretkey
+var config = require('../config/config')//our config module. 
+var stripe = require('stripe')(config.secretTestKey);
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -121,10 +126,11 @@ router.get('/getUserData', function(req, res, next){
 				res.json({failure: 'badToken'}); //Angular will need to act on this to get new token
 			}else{
 				res.json({
+					document: document,
 					username: document.username,
 					grind: document.grind,
 					frequency: document.frequency,
-					token: document.token
+					token: document.token,
 				});
 			}
 		});
@@ -136,12 +142,46 @@ router.get('/getUserData', function(req, res, next){
 	});
 });
 
-router.get('/options', function(req, res, next){
+router.post('/options', function(req, res, next){
 	User.update({
 		username: req.body.username
-	}, { weeklyTotal: req.body.weeklyTotal, grindType: req.body.grindType}).exec();
+	}, { frequency: req.body.frequency, amount: req.body.amount, weeklyTotal: req.body.weeklyTotal, grindType: req.body.grindType}).exec();
+	console.log('hello');
 	res.json({
 		message: 'updated'
+	});
+});
+router.post('/delivery', function(req, res, next){
+	User.update({
+		username: req.body.username
+	}, { fullName: req.body.fullName, address: req.body.address }).exec();
+	res.json({
+		message: 'success',
+		document: User
+	})
+});
+
+router.get('/payment', function(req, res, next){
+	res.json({
+		message: 'connected'
+	});
+});
+
+router.post('/stripe', function(req, res, next){
+	stripe.charges.create({
+		//how nuch and can come from form
+		amount: req.body.amount,
+		currency: 'usd',
+		source: req.body.stripeToken,
+	}).then(function(charge){
+		res.json({
+			message: 'successCharge'
+		});
+	}, function(err){
+		res.json({
+			message: 'errorCharge',
+			error: err
+		});
 	});
 });
 

@@ -32,13 +32,7 @@
           .col-sm-6.text-left
             select.btn.btn-default.dropdown.selections(ng-model="grindTypeSolo", ng-options="grind.option for grind in grinds")
               option(value="?", selected="selected")
-              option(label="Extra Coarse", value="object:16") Extra Coarse
-              option(label="Coarse", value="object:17") Coarse
-              option(label="Medium-Coarse", value="object:18") Medium-Coarse
-              option(label="Medium", value="object:19") Medium
-              option(label="Medium-Fine", value="object:20") Medium-Fine
-              option(label="Fine", value="object:21") Fine
-              option(label="Extra Fine", value="object:22") Extra Fine
+              option(label="{grind}") {{grind}}
         .row
           button.btn.btn-default.send-it.center-block(type="submit") Submit
         .row
@@ -73,13 +67,7 @@
             .col-sm-6.text-left
               select.btn.btn-default.dropdown.selections(ng-model="grindTypeFamily", ng-options="grind.option for grind in grinds")
                 option(value="?", selected="selected")
-                option(label="Extra Coarse", value="object:16") Extra Coarse
-                option(label="Coarse", value="object:17") Coarse
-                option(label="Medium-Coarse", value="object:18") Medium-Coarse
-                option(label="Medium", value="object:19") Medium
-                option(label="Medium-Fine", value="object:20") Medium-Fine
-                option(label="Fine", value="object:21") Fine
-                option(label="Extra Fine", value="object:22") Extra Fine
+                option(label="{{grind}}", value="object:16") {{grind}}
           .row
             button.btn.btn-default.send-it.center-block(ng-submit="", type="submit") Submit
           .row

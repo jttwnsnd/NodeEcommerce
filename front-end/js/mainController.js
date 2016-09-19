@@ -6,6 +6,11 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 	$scope.userExists = false;
 	var apiPath = 'http://localhost:3000';
 	checkToken();
+	var testSK = 'sk_test_s0Z6wAo5DRnEVbbwUeD876n1';
+	var testPK = 'pk_test_ZJna4w56Eih7glMjoWk8csQA';
+	var liveSK = 'sk_live_7foZ0QdZJoeKyiUvFt0YT7LA';
+	var livePK = 'pk_live_drxWAZfUCsKUQUUVIOvLpbd6';
+
 
 	//arrays for my order forms to reference
 	$scope.frequencies = [
@@ -13,6 +18,11 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 		'Bi-weekly',
 		'Monthly'
 	];
+
+	$scope.states = ['AL','AK','AZ','AR','CA','CO','CT','DC','DE','FL','GA',
+	'HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO',
+	'MT','NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC',
+	'SD','TN','TX','UT','VT','VA','WA','WV','WI','WY'];
 
 	$scope.grinds = [
 		{option: 'Extra coarse'},
@@ -83,7 +93,6 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 				$cookies.put('token', response.data.token);
 				$cookies.put('username', $scope.username);
 				$location.path('/options');
-				console.log(response.data);
 			}
 			if(response.data.failure === 'noUser'){
 				console.log('Incorrect password');
@@ -92,14 +101,43 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 			console.log(response);
 		});
 	};
-	
-	$scope.$watch(function(){
-		return $location.path();
-	}, function(newPath){
-		if(newPath === '/payment'){
-			console.log('hello');
-		}
-	});
+	$scope.payOrder = function() {
+        $scope.errorMessage = "";
+
+        var handler = StripeCheckout.configure({
+            key: 'pk_test_ZJna4w56Eih7glMjoWk8csQA',
+            image: 'css/images/brand.png',
+            locale: 'auto',
+            token: function(token) {
+
+                console.log("The token Id is: ");
+                console.log(token.id);
+                $http.post(apiPath + '/stripe', {
+                    amount: $cookies.get('total') * 100,
+                    stripeToken: token.id,
+                    token: $cookies.get('token')
+                        //This will pass amount, stripeToken, and token to /payment
+                }).then(function successCallback(response) {
+                    console.log(response.data);
+                    if (response.data.success) {
+                        //Say thank you
+
+                        $location.path('/receipt');
+                    } else {
+                        $scope.errorMessage = response.data.message;
+                        //same on the checkout page
+                    }
+                }, function errorCallback(response) {
+                	console.log(response);
+                });
+            }
+        });
+        handler.open({
+            name: 'DC Roasters',
+            description: 'A Better Way To Grind',
+            amount: $scope.total * 100
+        });
+    };
 	//$scope.addToCart = function(idOfThingClickedOn){
 		//var oldCart = $cookies.get('cart');
 		//var newCart = oldCart + ',' + idOfThingClickedOn;
@@ -118,29 +156,38 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 		$cookies.put('token', '');
 		$cookies.remove('token');
 		$cookies.remove('username');
-		console.log();
+		console.log('hello');
+		$location.path('/');
 	};
 	
 	//select your options and submit them to Mongo
 	$scope.optionsForm = function(form){
-		var weeklyTotal, grindType;
+		var weeklyTotal, grindType, assignFrequency, amount;
 		if(form === 1){
-			weeklyTotal = '$7.00';
+			assignFrequency = 'Weekly';
+			weeklyTotal = '7.00';
+			amount = '0.35';
 			grindType = $scope.grindTypeSolo;
 		}else if(form === 2){
-			weeklyTotal = '$18.00';
+			assignFrequency = 'Weekly';
+			amount = '0.9';
+			weeklyTotal = '18.00';
 			grindType = $scope.grindTypeFamily;
 		}else{
+			assignFrequency = $scope.frequency;
+			amount = $scope.quantity;
 			weeklyTotal = String(20 * $scope.quantity);
 			grindType = $scope.grindTypeCustom;
 		}
 		$http.post(apiPath + '/options', {
 			username: $cookies.get('username'),
+			frequency: assignFrequency,
+			amount: amount,
 			weeklyTotal: weeklyTotal,
 			grindType: grindType
 		}).then(function successCallback(response){
-			if(response.data.message="updated"){
-				$location.path('/');
+			if(response.data.message === "updated"){
+				$location.path('/delivery');
 			}
 		}, function errorCallback(response){
 			console.log(response);
@@ -149,14 +196,17 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 	function checkToken() {
 		if($cookies.get('token')){
 			$http.get(apiPath + '/getUserData?token='+ $cookies.get('token')).then(function successCallback(response){
-				console.log(response);
 				if(response.data.failure === 'badToken'){
 					$location.path = '/login'; //Token is bad or fake. Goodbye
 				}else if(response.data.failure === 'noToken'){
 					$location.path('/login'); //No token. Goodbye
 				}else{
 					//token is good. Response.data will have their stuff in it.
-					$rootScope.username = response.data.username;
+					console.log(response.data);
+					$cookies.put('total', response.data.document.weeklyTotal);
+					console.log(response.data.order);
+					$scope.userInfo = response.data;
+					$scope.username = response.data.username;
 					$rootScope.loggedOut = true;
 				}
 			}, function errorCallback(response){
@@ -164,7 +214,24 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 			});
 		}
 	}
+	$scope.deliverForm = function(){
+		$http.post(apiPath + '/delivery', {
+			username: $cookies.get('username'),
+			fullName: $scope.fullName,
+			address: {address1: $scope.address1, address2: $scope.address2, city: $scope.city, state: $scope.state, zipCode: $scope.zipCode}
+		}).then(function successCallback(response){
+			console.log(response.data.message);
+			$location.path('/payment');
+		}, function errorCallback(response){
+			console.log(response)
+		});
+	};
+	$scope.payment = function(){
+		console.log('submitted payment');
+	};
 });
+
+
 
 eComApp.config(function($routeProvider){
 	$routeProvider.when('/', {
@@ -181,6 +248,14 @@ eComApp.config(function($routeProvider){
 	});
 	$routeProvider.when('/options', {
 		templateUrl: 'views/selection.html',
+		controller: 'mainController'
+	});
+	$routeProvider.when('/delivery', {
+		templateUrl: 'views/delivery.html',
+		controller: 'mainController'
+	});
+	$routeProvider.when('/payment', {
+		templateUrl: 'views/payment.html',
 		controller: 'mainController'
 	}).otherwise({
 		redirectTo: '/'

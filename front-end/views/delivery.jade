@@ -1,0 +1,44 @@
+.container-fluid
+  .row
+    .col-sm-12.text-center
+      h1 Please enter your shipping information
+      h4 Safe shipping guaranteed.
+  .row
+    .col-sm-6.col-sm-offset-3
+      .delivery-box
+        .row
+          .col-sm-12
+            .row
+              .col-sm-12.text-center
+                h1 Address
+              hr
+              h4.warning
+              .row
+                .col-sm-12.form-wrapper
+                  form#delivery-form(role="form", ng-submit="deliverForm()", name="delivery")
+                    .form-group
+                      label Full Name
+                      input.form-control(type="text", ng-model="name", placeholder="John Doe", required="required")
+                    .form-group
+                      label Address Line 1
+                      input.form-control(type="text", ng-model="address1", placeholder="123 Sesame Street", required="required")
+                    .form-group
+                      label Address Line 2
+                      input.form-control(type="text", ng-model="address2", placeholder="Apt 100", required="required")
+                    .form-group
+                      label City
+                      input.form-control(type="text", ng-model="city", placeholder="John Doe", required="required")
+                    .form-group
+                      label State
+                      br
+                      select.btn.btn-default.state-dropdown(ng-model="state", required="required", ng-options="state for state in states")
+                        option(value="?", selected="selected")
+                        options(value="{{state}}") {{state}}
+                    .form-group
+                      label Zip Code
+                      input.form-control(type="text", ng-model="zipCode", placeholder="John Doe", required="required")
+                    .form-group
+                      label Delivery Date
+                      input.form-control#date-picker(type="date", ng-model="deliveryDate", placeholder="John Doe", required="required")
+                    .button-holder
+                      button.btn.btn-default.center-block(type="submit") Submit

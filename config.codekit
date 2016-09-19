@@ -13,6 +13,28 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/back-end\/config\/config.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/back-end\/config\/config.js",
+		"outputAbbreviatedPath": "\/back-end\/config\/min\/config-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/back-end\/config\/min\/config-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/back-end\/config\/min\/config-min.js",
+		"outputAbbreviatedPath": "\/back-end\/config\/min\/min\/config-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/back-end\/min\/app-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -198,6 +220,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/configs\/_variables.sass",
 		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_variables.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/front-end\/compass\/sass\/layout\/_delivery.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/front-end\/compass\/sass\/layout\/_delivery.sass",
+		"outputAbbreviatedPath": "\/front-end\/compass\/css\/_delivery.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -574,15 +612,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/front-end\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/front-end\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -751,6 +780,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/front-end\/views\/payment.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/front-end\/views\/payment.jade",
+		"outputAbbreviatedPath": "\/front-end\/views\/payment.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/front-end\/views\/register.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -770,15 +810,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
-		},
-	"\/front-end\/views\/selection.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/front-end\/views\/selection.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/front-end\/views\/selection.jade": {
 		"compileDebug": 1,

@@ -45,13 +45,7 @@
           <div class="col-sm-6 text-left">
             <select ng-model="grindTypeSolo" ng-options="grind.option for grind in grinds" class="btn btn-default dropdown selections">
               <option value="?" selected="selected"></option>
-              <option label="Extra Coarse" value="object:16">Extra Coarse</option>
-              <option label="Coarse" value="object:17">Coarse</option>
-              <option label="Medium-Coarse" value="object:18">Medium-Coarse</option>
-              <option label="Medium" value="object:19">Medium</option>
-              <option label="Medium-Fine" value="object:20">Medium-Fine</option>
-              <option label="Fine" value="object:21">Fine</option>
-              <option label="Extra Fine" value="object:22">Extra Fine</option>
+              <option label="{grind}">{{grind}}</option>
             </select>
           </div>
         </div>
@@ -102,13 +96,7 @@
           <div class="col-sm-6 text-left">
             <select ng-model="grindTypeFamily" ng-options="grind.option for grind in grinds" class="btn btn-default dropdown selections">
               <option value="?" selected="selected"></option>
-              <option label="Extra Coarse" value="object:16">Extra Coarse</option>
-              <option label="Coarse" value="object:17">Coarse</option>
-              <option label="Medium-Coarse" value="object:18">Medium-Coarse</option>
-              <option label="Medium" value="object:19">Medium</option>
-              <option label="Medium-Fine" value="object:20">Medium-Fine</option>
-              <option label="Fine" value="object:21">Fine</option>
-              <option label="Extra Fine" value="object:22">Extra Fine</option>
+              <option label="{{grind}}" value="object:16">{{grind}}</option>
             </select>
           </div>
         </div>

@@ -224,6 +224,11 @@ input, select {
   #option-custom .custom-text {
     margin-top: 80px; }
 
+.delivery-box {
+  background-color: #6A4A2C;
+  padding: 20px;
+  box-shadow: 0 0 10px 0 #333; }
+
 body {
   background-color: #EDEBE6;
   color: #084d40;

@@ -13,6 +13,7 @@ html(ng-app='ecommerceApp')
     script(type="text/javascript", src="js/mainController.js")
     script(src="js/mainController.js")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
+    script(src="https://checkout.stripe.com/checkout.js")
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css")
   body(ng-controller="mainController")
     nav.nav.navbar-default.navbar-fixed-top#top
@@ -34,7 +35,7 @@ html(ng-app='ecommerceApp')
           li(ng-hide="loggedOut")
             a(ng-href="#/login") LOG IN
           li(ng-show="loggedOut")
-            a(ng-href="#/logout") LOG OUT
+            a(ng-click="logout()") LOG OUT
     .sub-nav.nav.navbar.navbar-fixed-top.text-center
       ul
         li 
@@ -42,7 +43,7 @@ html(ng-app='ecommerceApp')
         li 
           a(ng-class="getClass('/options')", href="#/options") OPTIONS
         li 
-          a(ng-class="getClass('/shipping')", href="#/shipping") SHIPPING
+          a(ng-class="getClass('/shipping')", href="#/delivery") SHIPPING
         li 
           a(ng-class="getClass('/payment')", href="#/payment") PAYMENT
         li 

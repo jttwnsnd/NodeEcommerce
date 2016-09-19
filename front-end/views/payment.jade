@@ -1,0 +1,92 @@
+.container-fluid
+  .row
+    .col-sm-12.text-center
+      h1 Here's your order!
+      h4 Please insert your payment information
+    .col-sm-8.col-sm-offset-2.overview.text-center
+      .row
+        .col-sm-12
+          h2 Choices
+          a.goback(href="#/options") edit
+          .row.list-item
+            .col-sm-6 
+              h4 Grind
+            .col-sm-6
+              h4 {{userInfo.document.grindType.option}}
+          .row.list-item
+            .col-sm-6 
+              h4 Frequency of Delivery
+            .col-sm-6
+              h4 {{userInfo.document.frequency}}
+          .row.list-item
+            .col-sm-6 
+              h4 Coffee in Pounds
+            .col-sm-6
+              h4 {{userInfo.document.amount}}
+      .row
+        .col-sm-12
+          h2 Delivery Information
+          a.goback(ng-href="#/delivery") edit
+          .row.list-item
+            .col-sm-6 
+              h4 Full Name
+            .col-sm-6
+              h4 {{userInfo.document.fullName}}
+          .row.list-item
+            .col-sm-6 
+              h4 Address 1
+            .col-sm-6
+              h4 {{userInfo.document.address.address1}}
+          .row.list-item
+            .col-sm-6 
+              h4 Address 2
+            .col-sm-6
+              h4 {{userInfo.document.address.address2}}
+          .row.list-item
+            .col-sm-6 
+              h4 City
+            .col-sm-6
+              h4 {{userInfo.document.address.city}}
+          .row.list-item
+            .col-sm-6 
+              h4 State
+            .col-sm-6
+              h4 {{userInfo.document.address.state}}
+          .row.list-item
+            .col-sm-6 
+              h4 Zip Code
+            .col-sm-6
+              h4 {{userInfo.document.address.zipCode}}
+          .row.list-item
+            .col-sm-6 
+              h4 Delivery Date
+            .col-sm-6
+              h4 {{}}
+      .row
+        .col-sm-12
+          h2 Current Charge
+          .row.list-item
+            .col-sm-6 
+              h4 Quantity
+            .col-sm-6
+              h4 {{userInfo.document.amount}}
+          .row.list-item
+            .col-sm-6 
+              h4 Shipping
+            .col-sm-6
+              h4.active FREE!
+          .row.list-item
+            .col-sm-6 
+              h4 Total
+            .col-sm-6
+              h4(ng-model="total") {{userInfo.document.weeklyTotal}}
+
+  .row
+    .col-sm-10.col-sm-offset-1.text-center
+      button.btn.btn-default#custom-button(ng-click="payOrder()") Pay With Card
+      button.btn.btn-default.block-center(ng-submit="cancel()") Cancel Order
+      
+//- populate payment page
+//- create receipt page
+//- thank user
+//- save order into documents
