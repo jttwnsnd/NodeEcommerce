@@ -4,7 +4,7 @@ var eComApp = angular.module('ecommerceApp', ['ngRoute', 'ngCookies']);
 var eController = eComApp.controller('mainController', function($scope, $rootScope, $http, $location, $cookies){
 	$scope.test = 'yo';
 	$scope.userExists = false;
-	var apiPath = 'http://www.jt-townsend.com:3000';
+	var apiPath = 'http://jt-townsend.com:3000';
 	checkToken();
 	var testSK = 'sk_test_s0Z6wAo5DRnEVbbwUeD876n1';
 	var testPK = 'pk_test_ZJna4w56Eih7glMjoWk8csQA';
