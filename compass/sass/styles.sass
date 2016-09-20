@@ -3,6 +3,33 @@
 @import 'configs/_variables'
 @import 'layout/_selection'
 @import 'layout/_delivery'
+@import 'layout/_payment'
+
+#instruction-modal
+  display: none
+  position: fixed
+  left: 0
+  right: 0
+  top: 120px
+  margin-left: auto
+  margin-right: auto
+  width: 300px
+  height: auto
+  background-color: #fff
+  box-shadow: 0 0 10px 0
+  z-index: 6
+  padding: 0 20px 10px 20px
+  border-radius: 10px
+  .close-button 
+    position: absolute
+    left: 273px
+    top: 5px
+    height: 22px
+    width: 22px
+    color: #777
+    background-color: #ddd
+    border-radius: 50%
+    cursor: default
 
 body
   background-color: $lighter_accent
@@ -11,6 +38,9 @@ body
   padding: 0
   overflow-x: hidden
   a
+    &.dark-link
+      color: $main_accent
+      padding: 10px
     color: $lighter_accent
     transition: all .5s ease
     .active

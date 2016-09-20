@@ -37,7 +37,7 @@ html(ng-app='ecommerceApp')
           li(ng-show="loggedOut")
             a(ng-click="logout()") LOG OUT
     .sub-nav.nav.navbar.navbar-fixed-top.text-center
-      ul
+      ul(ng-show="loggedOut")
         li 
           a(ng-class="getClass('/')", href="#/") HOME
         li 

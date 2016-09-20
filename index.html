@@ -33,7 +33,7 @@
       </div>
     </nav>
     <div class="sub-nav nav navbar navbar-fixed-top text-center">
-      <ul>
+      <ul ng-show="loggedOut">
         <li> <a ng-class="getClass('/')" href="#/">HOME</a></li>
         <li> <a ng-class="getClass('/options')" href="#/options">OPTIONS</a></li>
         <li> <a ng-class="getClass('/shipping')" href="#/delivery">SHIPPING</a></li>

@@ -323,6 +323,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/compass\/sass\/layout\/_payment.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/compass\/sass\/layout\/_payment.sass",
+		"outputAbbreviatedPath": "\/compass\/css\/_payment.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
 	"\/compass\/sass\/layout\/_selection.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -835,6 +851,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/views\/payment.jade",
 		"outputAbbreviatedPath": "\/views\/payment.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/views\/receipt.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/receipt.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/views\/receipt.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/receipt.jade",
+		"outputAbbreviatedPath": "\/views\/receipt.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0

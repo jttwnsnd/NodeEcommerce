@@ -1,7 +1,7 @@
 /*global angular:true */
 /*global console:true */
 var eComApp = angular.module('ecommerceApp', ['ngRoute', 'ngCookies']);
-var eController = eComApp.controller('mainController', function($scope, $rootScope, $http, $location, $cookies){
+var eController = eComApp.controller('mainController', function($scope, $rootScope, $http, $window, $location, $cookies){
 	$scope.test = 'yo';
 	$scope.userExists = false;
 	var apiPath = 'http://52.34.40.208:3000';
@@ -11,6 +11,38 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 	var liveSK = 'sk_live_7foZ0QdZJoeKyiUvFt0YT7LA';
 	var livePK = 'pk_live_drxWAZfUCsKUQUUVIOvLpbd6';
 
+	if (($location.path() == '/') && ($cookies.get('token') == undefined)){
+		setTimeout(instructionModalShow, 1000);
+		function instructionModalShow(){
+			$('#instruction-modal').show()
+			.css({
+				left: '0px',
+				top: '120px',
+				marginLeft: 'auto',
+				marginRight: 'auto'
+			});
+			$('.modal-text').html('For a complete experience, register with fake information');
+		};
+	}else if($location.path() == '/payment'){
+		setTimeout(cardNumberModal, 1000);
+		function cardNumberModal(){
+			$('#instruction-modal').show()
+			.css({
+				position: 'fixed',
+				left: '10px',
+				top: '165px',
+				margin: '0'
+			});
+			$('.modal-text').html('Use Card #<br>4242 4242 4242 4242<br>to test payment. <br>Any Exp Date. <br>Any CVC.');
+		};
+	}else{
+		$('#instruction-modal').hide();
+	}
+
+	// Close modals
+	$('.close-button').click(function(){
+		$('#instruction-modal').hide();
+	});
 
 	//arrays for my order forms to reference
 	$scope.frequencies = [
@@ -101,6 +133,13 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 			console.log(response);
 		});
 	};
+	$scope.go = function(){
+		if($cookies.get('token') === undefined){
+			$location.path('/login');
+		}else{
+			$location.path('/options');
+		}
+	}
 	$scope.payOrder = function() {
         $scope.errorMessage = "";
 
@@ -156,10 +195,11 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 		$cookies.put('token', '');
 		$cookies.remove('token');
 		$cookies.remove('username');
-		console.log('hello');
-		$location.path('/');
+		$window.location.reload();
+		if($location.url() !== '/'){
+			$location.path('/');
+		}
 	};
-	
 	//select your options and submit them to Mongo
 	$scope.optionsForm = function(form){
 		var weeklyTotal, grindType, assignFrequency, amount;
@@ -256,6 +296,10 @@ eComApp.config(function($routeProvider){
 	});
 	$routeProvider.when('/payment', {
 		templateUrl: 'views/payment.html',
+		controller: 'mainController'
+	});
+	$routeProvider.when('/receipt', {
+		templateUrl: 'views/receipt.html',
 		controller: 'mainController'
 	}).otherwise({
 		redirectTo: '/'
