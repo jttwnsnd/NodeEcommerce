@@ -195,14 +195,11 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 		$cookies.put('token', '');
 		$cookies.remove('token');
 		$cookies.remove('username');
-		$window.location.reload().then($location.path('/'));
-		// $location.path('/');
-		
+		$window.location.reload();
+		if($location.url() !== '/'){
+			$location.path('/');
+		}
 	};
-	
-	// function refresher(){
-	// 	$window.location.reload();
-	// }
 	//select your options and submit them to Mongo
 	$scope.optionsForm = function(form){
 		var weeklyTotal, grindType, assignFrequency, amount;
