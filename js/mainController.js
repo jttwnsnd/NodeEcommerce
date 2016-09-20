@@ -1,7 +1,7 @@
 /*global angular:true */
 /*global console:true */
 var eComApp = angular.module('ecommerceApp', ['ngRoute', 'ngCookies']);
-var eController = eComApp.controller('mainController', function($scope, $rootScope, $http, $location, $cookies){
+var eController = eComApp.controller('mainController', function($scope, $rootScope, $http, $window, $location, $cookies){
 	$scope.test = 'yo';
 	$scope.userExists = false;
 	var apiPath = 'http://jt-townsend.com:3000';
@@ -195,10 +195,14 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 		$cookies.put('token', '');
 		$cookies.remove('token');
 		$cookies.remove('username');
-		console.log('hello');
-		$location.path('/');
+		$window.location.reload().then($location.path('/'));
+		// $location.path('/');
+		
 	};
 	
+	// function refresher(){
+	// 	$window.location.reload();
+	// }
 	//select your options and submit them to Mongo
 	$scope.optionsForm = function(form){
 		var weeklyTotal, grindType, assignFrequency, amount;
@@ -295,6 +299,10 @@ eComApp.config(function($routeProvider){
 	});
 	$routeProvider.when('/payment', {
 		templateUrl: 'views/payment.html',
+		controller: 'mainController'
+	});
+	$routeProvider.when('/receipt', {
+		templateUrl: 'views/receipt.html',
 		controller: 'mainController'
 	}).otherwise({
 		redirectTo: '/'
