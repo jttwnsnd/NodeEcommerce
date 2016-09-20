@@ -222,6 +222,8 @@ input, select {
     padding-bottom: 10px; }
   #option-custom .custom-text {
     margin-top: 80px; }
+  #option-custom #quantity-input {
+    color: #000; }
 
 .delivery-box {
   background-color: #6A4A2C;

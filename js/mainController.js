@@ -33,7 +33,7 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 				top: '165px',
 				margin: '0'
 			});
-			$('.modal-text').html('Use Card #<br>4242 4242 4242 4242<br>to test payment. <br>Any Exp Date. <br>Any CVC.');
+			$('.modal-text').html('Use Card #<br>4242 4242 4242 4242<br>to test payment. <br>Any Exp Date after current year. <br>Any CVC.');
 		};
 	}else{
 		$('#instruction-modal').hide();
@@ -158,13 +158,13 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
                         //This will pass amount, stripeToken, and token to /payment
                 }).then(function successCallback(response) {
                     console.log(response.data);
-                    if (response.data.success) {
+                    if (response.data.success === 'Yess!') {
                         //Say thank you
-
                         $location.path('/receipt');
                     } else {
                         $scope.errorMessage = response.data.message;
                         //same on the checkout page
+                        $location.path('/receipt');
                     }
                 }, function errorCallback(response) {
                 	console.log(response);

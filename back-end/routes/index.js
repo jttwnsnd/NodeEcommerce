@@ -175,8 +175,9 @@ router.post('/stripe', function(req, res, next){
 		source: req.body.stripeToken,
 	}).then(function(charge){
 		res.json({
-			message: 'successCharge'
-		});
+			message: 'successCharge',
+			success: 'Yess!'
+		});	
 	}, function(err){
 		res.json({
 			message: 'errorCharge',

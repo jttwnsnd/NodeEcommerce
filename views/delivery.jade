@@ -19,7 +19,7 @@
                     .col-sm-12
                       .col-sm-6.col-sm-offset-3.form-group
                         label Full Name
-                        input.form-control(type="text", ng-model="name", placeholder="John Doe", required="required")
+                        input.form-control(type="text", ng-model="fullName", placeholder="John Doe", required="required")
                     .col-sm-12
                       .col-sm-6.col-sm-offset-3.form-group
                         label Address Line 1
@@ -27,11 +27,11 @@
                     .col-sm-12
                       .col-sm-6.col-sm-offset-3.form-group
                         label Address Line 2
-                        input.form-control(type="text", ng-model="address2", placeholder="Apt 100", required="required")
+                        input.form-control(type="text", ng-model="address2", placeholder="Apt 100")
                     .col-sm-12
                       .col-sm-6.col-sm-offset-3.form-group
                         label City
-                        input.form-control(type="text", ng-model="city", placeholder="John Doe", required="required")
+                        input.form-control(type="text", ng-model="city", placeholder="Kokomo", required="required")
                     .col-sm-12
                       .col-sm-6.col-sm-offset-3.form-group
                         label State
@@ -42,10 +42,10 @@
                     .col-sm-12
                       .col-sm-6.col-sm-offset-3.form-group
                         label Zip Code
-                        input.form-control(type="text", ng-model="zipCode", placeholder="John Doe", required="required")
+                        input.form-control(type="text", ng-model="zipCode", placeholder="00000", required="required")
                     .col-sm-12
                       .col-sm-6.col-sm-offset-3.form-group
                         label Delivery Date
-                        input.form-control#date-picker(type="date", ng-model="deliveryDate", placeholder="John Doe", required="required")
+                        input.form-control#date-picker(type="date", ng-model="deliveryDate", placeholder="09/22/2016", required="required")
                     .button-holder
                       button.btn.btn-default.center-block(type="submit") Submit
