@@ -3,3 +3,4 @@ front-end/.sass-cache/*
 .codekit-cache/*
 node_modules/*
 server.js
+config.codekit
