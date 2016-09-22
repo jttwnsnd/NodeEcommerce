@@ -20,8 +20,8 @@
 <p>Getting familiar with Jade in this project was my top priority. I was introduced to it with a couple Express.js projects like my <a href="http://www.github.com/jttwnsnd/socket-chatroom">socket chatroom</a> and loved the simplicity of it. Though, getting used to how it's syntax worked is more understanding how to say it in Jade that what to say for my markup.</p>
 <p>With Angular having data-binding, this was an obvious choice for the front-end. Ensuring that Angular knew everything going on in the backend first meant that I have to send everything to my backend from Angular. Inside my views that is bound through ng-view, provided by Angular Routes for an single page app, I would use ng-model in my HTML and reference it in my JS.</p>
 
-'''html
-//<input type="text" ng-model="username" placeholder="Enter Username" min-length="4" max-length="30" class="form-control"/>
+'''
+<input type="text" ng-model="username" placeholder="Enter Username" min-length="4" max-length="30" class="form-control"/>
 '''
 
 
