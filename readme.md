@@ -30,39 +30,15 @@ $scope.login = function(){
     password: $scope.password,
   })
 ```
-<p>With the $http.post, MongoDB is listening for this and ready to receive information, and binds the data from Angular to itself with the 'req' in the backend js callback.</p>
+<p>With the $http.post, Express is listening for this and ready to send informaation to MongoDB, and binds the data from Angular to MongoDb with the 'req' in the backend js callback. Here is a segment from my code to show that.</p>
 
 ```javascript
-var User = require('../models/user_model.js');
-
 router.post('/login', function(req, res, next){
 	User.findOne({
 		username: req.body.username //this is the droid we are looking for
 	}
 ```
-<p> 'User' was a schema I built for Mongoose, a structure for my MongoDB. Here is the actual schema that 'User' utilizes:</p>
-
-```javascript
-var Schema = mongoose.Schema;
-
-var userSchema = new Schema({
-	username: {type: String, required: true},
-	password: {type: String, required: true},
-	email: {type: String, required: true},
-	token: String,
-	tokenExpDate: Date,
-	plan: String,
-	frequency: String,
-	amount: Number,
-	weeklyTotal: String,
-	grindType: Object,
-	fullName: String,
-	address: Object,
-	order: Array
-}, {timestamps: true});
-```
-
-
+<p> With sending the information, I can also get it back. With it stored, this brought my next challenge. I wanted the username of every person logged in to be displayed in the menu.</p>
 
 
 ## back-end is an api driven by Express and mongoDB in node.
