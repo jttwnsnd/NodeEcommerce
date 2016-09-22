@@ -1,6 +1,6 @@
 # Ecommerce Site Using Node, Express, MongoDB, and Angular. Full-Stack MEAN.
 
-![alt tag](view_of_login.gif)
+<img src="view_of_login.gif">
 
 ## Overview of Project
 <p>DC Roasters is an Ecommerce site that is built on the MEAN stack. Login in with fake information for the full experience. Select a coffee plan that fits, or create your own.</p>
