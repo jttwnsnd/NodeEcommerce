@@ -11,6 +11,7 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 	var liveSK = 'sk_live_7foZ0QdZJoeKyiUvFt0YT7LA';
 	var livePK = 'pk_live_drxWAZfUCsKUQUUVIOvLpbd6';
 
+	//Modal controls
 	if (($location.path() == '/') && ($cookies.get('token') == undefined)){
 		setTimeout(instructionModalShow, 1000);
 		function instructionModalShow(){
@@ -140,6 +141,8 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 			$location.path('/options');
 		}
 	}
+
+	//calls Stripe for checkout
 	$scope.payOrder = function() {
         $scope.errorMessage = "";
 
@@ -177,29 +180,20 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
             amount: $scope.total * 100
         });
     };
-	//$scope.addToCart = function(idOfThingClickedOn){
-		//var oldCart = $cookies.get('cart');
-		//var newCart = oldCart + ',' + idOfThingClickedOn;
-		//cookies.put('cart', newCart)
-	//}
-	//$scope.gtCart = function(){
-		//var cart = $cookies.get('cart');
-		//var cartItemsArray = cart.split(',');
-		//for(var i = 0; i < cartItemsArray.length; i++){
-			// do stuff with each index
-			// ie get the cost, name, etc and load them up in another array
-		//}
-	//}
+	
+	//Log out
 	$scope.logout = function(){
 		$rootScope.loggedOut = true;
 		$cookies.put('token', '');
 		$cookies.remove('token');
 		$cookies.remove('username');
+		$cookies.remove('document');
 		$window.location.reload();
 		if($location.url() !== '/'){
 			$location.path('/');
 		}
 	};
+
 	//select your options and submit them to Mongo
 	$scope.optionsForm = function(form){
 		var weeklyTotal, grindType, assignFrequency, amount;
@@ -233,6 +227,8 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 			console.log(response);
 		});
 	};
+
+	//verifies the token generated and assigns data over to Angular
 	function checkToken() {
 		if($cookies.get('token')){
 			$http.get(apiPath + '/getUserData?token='+ $cookies.get('token')).then(function successCallback(response){
@@ -254,6 +250,8 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 			});
 		}
 	}
+
+	//transfers data to Mongo from Delivery page
 	$scope.deliverForm = function(){
 		$http.post(apiPath + '/delivery', {
 			username: $cookies.get('username'),
@@ -272,7 +270,7 @@ var eController = eComApp.controller('mainController', function($scope, $rootSco
 });
 
 
-
+//routing configuration
 eComApp.config(function($routeProvider){
 	$routeProvider.when('/', {
 		templateUrl: 'views/main.html',
