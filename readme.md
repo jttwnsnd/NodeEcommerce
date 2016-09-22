@@ -21,7 +21,7 @@
 <p>With Angular having data-binding, this was an obvious choice for the front-end. Ensuring that Angular knew everything going on in the backend first meant that I have to send everything to my backend from Angular. Inside my views that is bound through ng-view, provided by Angular Routes for an single page app, I would use ng-model in my HTML and reference it in my JS.</p>
 
 '''html
-<input type="text" ng-model="username" placeholder="Enter Username" min-length="4" max-length="30" class="form-control"/>
+//<input type="text" ng-model="username" placeholder="Enter Username" min-length="4" max-length="30" class="form-control"/>
 '''
 
 
