@@ -30,6 +30,39 @@ $scope.login = function(){
     password: $scope.password,
   })
 ```
-<p></p>
+<p>With the $http.post, MongoDB is listening for this and ready to receive information, and binds the data from Angular to itself with the 'req' in the backend js callback.</p>
+
+```javascript
+var User = require('../models/user_model.js');
+
+router.post('/login', function(req, res, next){
+	User.findOne({
+		username: req.body.username //this is the droid we are looking for
+	}
+```
+<p> 'User' was a schema I built for Mongoose, a structure for my MongoDB. Here is the actual schema that 'User' utilizes:</p>
+
+```javascript
+var Schema = mongoose.Schema;
+
+var userSchema = new Schema({
+	username: {type: String, required: true},
+	password: {type: String, required: true},
+	email: {type: String, required: true},
+	token: String,
+	tokenExpDate: Date,
+	plan: String,
+	frequency: String,
+	amount: Number,
+	weeklyTotal: String,
+	grindType: Object,
+	fullName: String,
+	address: Object,
+	order: Array
+}, {timestamps: true});
+```
+
+
+
 
 ## back-end is an api driven by Express and mongoDB in node.
