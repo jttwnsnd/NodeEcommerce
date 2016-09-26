@@ -31,10 +31,16 @@
 
 .visual-lining {
   padding: 150px 0 0 100px; }
+  @media screen and (max-width: 600px) {
+    .visual-lining {
+      padding-left: 10px; } }
   .visual-lining .title {
     color: #084d40;
     font-weight: bold;
     font-size: 44px; }
+    @media screen and (max-width: 600px) {
+      .visual-lining .title {
+        font-size: 30px; } }
   .visual-lining .subtitle {
     color: #084d40;
     font-size: 18px;
@@ -44,9 +50,10 @@
 .visual-lining-options {
   color: #084d40;
   display: inline-block;
-  padding: 150px 0px;
-  padding-right: 0px;
-  padding-bottom: 0px; }
+  padding: 150px 0px; }
+  @media screen and (max-width: 600px) {
+    .visual-lining-options {
+      padding-left: 10px; } }
   .visual-lining-options .options-title {
     color: #fff;
     font-size: 35px;
@@ -111,6 +118,9 @@
   .second_img .visual-lining-with-image {
     color: #084d40;
     padding: 150px 0px; }
+    @media screen and (max-width: 600px) {
+      .second_img .visual-lining-with-image {
+        padding-left: 10px; } }
     .second_img .visual-lining-with-image .options-title {
       color: #084d40;
       font-size: 35px;
@@ -128,6 +138,9 @@
   .third_img .visual-lining-with-image {
     color: #084d40;
     padding: 150px 0px; }
+    @media screen and (max-width: 600px) {
+      .third_img .visual-lining-with-image {
+        padding-left: 10px; } }
     .third_img .visual-lining-with-image .options-title {
       color: #fff;
       font-size: 35px;
@@ -198,6 +211,9 @@ input, select {
     height: 300px;
     width: auto;
     border: 5px solid #684A2C; }
+    @media screen and (max-width: 600px) {
+      #option-individual img {
+        height: 150px; } }
 
 #option-family {
   background-color: #6A4A2C;
@@ -208,6 +224,9 @@ input, select {
     height: 300px;
     width: auto;
     border: 5px solid #684A2C; }
+    @media screen and (max-width: 600px) {
+      #option-family img {
+        height: 150px; } }
 
 #option-custom {
   background-color: #6A4A2C;
@@ -317,5 +336,8 @@ body {
         display: inline-block;
         padding: 5px;
         font-size: 18px; }
+        @media screen and (max-width: 600px) {
+          body .sub-nav ul li {
+            font-size: 10px; } }
   body #views {
     margin-top: 100px; }

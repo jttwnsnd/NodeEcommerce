@@ -12,31 +12,31 @@
           h5 For the those who drink solo
           img(src="css/images/drinker.jpg")
         .row
-          .col-sm-6.text-right
+          .col-xs-6.text-right
             h4 Cups per week:
-          .col-sm-6.text-left
+          .col-xs-6.text-left
             h4 14
         .row
-          .col-sm-6.text-right
+          .col-xs-6.text-right
             h4 Price per cup:
-          .col-sm-6.text-left
+          .col-xs-6.text-left
             h4 $0.50
         .row
-          .col-sm-6.text-right
+          .col-xs-6.text-right
              h4 Weekly total:
-          .col-sm-6.text-left
+          .col-xs-6.text-left
             h4 $7.00
         .row
-          .col-sm-6.text-right
+          .col-xs-6.text-right
             h4 Grind Type
-          .col-sm-6.text-left
+          .col-xs-6.text-left
             select.btn.btn-default.dropdown.selections(ng-model="grindTypeSolo", ng-options="grind.option for grind in grinds")
               option(value="?", selected="selected")
               option(label="{grind}") {{grind}}
         .row
           button.btn.btn-default.send-it.center-block(type="submit") Submit
         .row
-          .col-sm-12.text-center
+          .col-xs-12.text-center
             h5 FREE Shipping!
             //- put check box here for auto shipping
 
@@ -47,24 +47,24 @@
             h5 For those who drink together
             img(src="css/images/drinkers.jpg")
           .row
-            .col-sm-6.text-right
+            .col-xs-6.text-right
               h4 Cups per week:
-            .col-sm-6.text-left
+            .col-xs-6.text-left
               h4 40
           .row
-            .col-sm-6.text-right
+            .col-xs-6.text-right
               h4 Price per cup:
-            .col-sm-6.text-left
+            .col-xs-6.text-left
               h4 $0.45
           .row
-            .col-sm-6.text-right
+            .col-xs-6.text-right
                h4 Weekly total:
-            .col-sm-6.text-left
+            .col-xs-6.text-left
               h4 $18.00
           .row
-            .col-sm-6.text-right
+            .col-xs-6.text-right
               h4 Grind Type
-            .col-sm-6.text-left
+            .col-xs-6.text-left
               select.btn.btn-default.dropdown.selections(ng-model="grindTypeFamily", ng-options="grind.option for grind in grinds")
                 option(value="?", selected="selected")
                 option(label="{{grind}}", value="object:16") {{grind}}

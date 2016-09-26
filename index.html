@@ -23,16 +23,17 @@
         <div class="navbar-header">
           <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><img src="css/images/brand.png"/></a>
         </div>
-        <div id="navbar-collapse-1" class="collapse navbaar-collapse"></div>
-        <ul class="nav navbar-nav navbar-right">
-          <li ng-show="loggedOut"> <a href="#">Hello, {{username}}</a></li>
-          <li ng-hide="loggedOut"><a ng-href="#/register">SIGN UP</a></li>
-          <li ng-hide="loggedOut"><a ng-href="#/login">LOG IN</a></li>
-          <li ng-show="loggedOut"><a ng-click="logout()">LOG OUT</a></li>
-        </ul>
+        <div id="navbar-collapse-1" class="collapse navbaar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li ng-show="loggedOut"> <a href="#">Hello, {{username}}</a></li>
+            <li ng-hide="loggedOut"><a ng-href="#/register">SIGN UP</a></li>
+            <li ng-hide="loggedOut"><a ng-href="#/login">LOG IN</a></li>
+            <li ng-show="loggedOut"><a ng-click="logout()">LOG OUT</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <div class="sub-nav nav navbar navbar-fixed-top text-center">
+    <div class="sub-nav nav navbar navbar-fixed-top text-center col-xs-12">
       <ul ng-show="loggedOut">
         <li> <a ng-class="getClass('/')" href="#/">HOME</a></li>
         <li> <a ng-class="getClass('/options')" href="#/options">OPTIONS</a></li>

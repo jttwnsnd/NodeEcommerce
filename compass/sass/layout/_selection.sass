@@ -21,18 +21,22 @@ input, select
 		height: 300px
 		width: auto
 		border: 5px solid #684A2C
+		@media screen and (max-width: $breakpoint-mobile)
+			height: 150px
 
 #option-family
 	+form-options($mid_accent, 30px, 10px, #333)
-	color: #fff 
+	color: #fff
 	img
 		height: 300px
 		width: auto
 		border: 5px solid #684A2C
+		@media screen and (max-width: $breakpoint-mobile)
+			height: 150px
 
 #option-custom
 	+form-options($mid_accent, 0px, 10px, #333)
-	color: #fff 
+	color: #fff
 	.custom-divs
 		border: 1px solid $mid_accent
 		border-radius: 5px

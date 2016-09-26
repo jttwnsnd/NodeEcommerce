@@ -17,10 +17,14 @@
 		image: linear-gradient(transparent 0%, $lighter_accent 80%)
 .visual-lining
 	padding: 150px 0 0 100px
+	@media screen and (max-width: $breakpoint-mobile)
+		padding-left: 10px
 	.title
 		color: $main_accent
 		font-weight: bold
 		font-size: 44px
+		@media screen and (max-width: $breakpoint-mobile)
+			font-size: 30px
 	.subtitle
 		color: $main_accent
 		font-size: 18px
@@ -30,8 +34,8 @@
 	color: $main_accent
 	display: inline-block
 	+visual-lining-space(150px, 0px)
-	padding-right: 0px
-	padding-bottom: 0px
+	@media screen and (max-width: $breakpoint-mobile)
+		padding-left: 10px
 	.options-title
 		color: #fff
 		font-size: 35px
@@ -81,9 +85,12 @@
 				size: auto 100%
 				repeat: no-repeat
 			transform: rotateZ(-10deg) translateY(25%) translateX(25%)
+
 	.visual-lining-with-image
 		color: $main_accent
 		+visual-lining-space(150px, 0px)
+		@media screen and (max-width: $breakpoint-mobile)
+			padding-left: 10px
 		.options-title
 			color: $main_accent
 			font-size: 35px
@@ -100,6 +107,8 @@
 	.visual-lining-with-image
 		color: $main_accent
 		+visual-lining-space(150px, 0px)
+		@media screen and (max-width: $breakpoint-mobile)
+			padding-left: 10px
 		.options-title
 			color: #fff
 			font-size: 35px
@@ -127,6 +136,3 @@
 		#started
 			margin: 35px
 			+submitButton(10px, 25px, $main_accent, $hover)
-
-
-	

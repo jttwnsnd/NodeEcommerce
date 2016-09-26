@@ -27,16 +27,16 @@ html(ng-app='ecommerceApp')
           a.navbar-brand(href="#")
             img(src="css/images/brand.png")
         #navbar-collapse-1.collapse.navbaar-collapse
-        ul.nav.navbar-nav.navbar-right
-          li(ng-show="loggedOut") 
-            a(href='#') Hello, {{username}}
-          li(ng-hide='loggedOut')
-            a(ng-href="#/register") SIGN UP
-          li(ng-hide="loggedOut")
-            a(ng-href="#/login") LOG IN
-          li(ng-show="loggedOut")
-            a(ng-click="logout()") LOG OUT
-    .sub-nav.nav.navbar.navbar-fixed-top.text-center
+          ul.nav.navbar-nav.navbar-right
+            li(ng-show="loggedOut") 
+              a(href='#') Hello, {{username}}
+            li(ng-hide='loggedOut')
+              a(ng-href="#/register") SIGN UP
+            li(ng-hide="loggedOut")
+              a(ng-href="#/login") LOG IN
+            li(ng-show="loggedOut")
+              a(ng-click="logout()") LOG OUT
+    .sub-nav.nav.navbar.navbar-fixed-top.text-center.col-xs-12
       ul(ng-show="loggedOut")
         li 
           a(ng-class="getClass('/')", href="#/") HOME
